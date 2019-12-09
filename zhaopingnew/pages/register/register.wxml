@@ -1,0 +1,85 @@
+<!--pages/register/register.wxml-->
+<view class="ablock" hidden="{{companyFlag}}">
+  <view class="title">
+    <text class="title font">欢迎加入XX招聘</text>
+    <view class="line"></view>
+  </view>
+  <form bindsubmit="companySubmit" class="myform">
+    <view class="content">
+      <text>公司名字</text>
+      <input name="company_name" type="text"></input>
+    </view>
+    <view class="content">
+      <text>公司地址</text>
+      <input name="company_address" type="text"></input>
+    </view>
+    <view class="content">
+      <text>名字</text>
+      <input name="company_represent"></input>
+    </view>
+    <view class="content">
+      <text>电话</text>
+      <input name="company_tel" type="text"></input>
+    </view>
+    <view class="content">
+      <text>性别</text>
+      <radio-group class="radio-group" name="company_sex" bindchange="radioChange">
+        <radio class="radio" value="男">
+          <text>男</text>
+        </radio>
+        <radio class="radio" value="女">
+          <text>女</text>
+        </radio>
+      </radio-group>
+    </view>
+    <!--bindsubmit="formSubmit" formType="submit" -->
+    <!-- <view open-type="getUserInfo" bindgetuserinfo="onGotUserInfo"> -->
+    <button formType="submit" class="bt" style="width:26%;">
+      确定
+    </button>
+    <!-- </view> -->
+  </form>
+
+</view>
+<view class="ablock" hidden="{{hunterFlag}}">
+  <view class="title">
+    <text class="title font">欢迎来到XX招聘</text>
+    <view class="line"></view>
+  </view>
+  <form bindsubmit="hunterSubmit" class="myform">
+    <view class="content">
+      <text>用户名</text>
+      <input name="hunter_name" type="text" bindinput="setcompany"></input>
+    </view>
+    <view class="content">
+      <text>性别</text>
+      <radio-group class="radio-group" name="hunter_sex" bindchange="radioChange">
+        <radio class="radio" value="男">
+          <text>男</text>
+        </radio>
+        <radio class="radio" value="女">
+          <text>女</text>
+        </radio>
+      </radio-group>
+    </view>
+    <view class="content">
+      <text>电话号码</text>
+      <input name="hunter_phone" type="text"></input>
+    </view>
+    <view class="content">
+      <text>出生日期</text>
+      <input name="hunter_birthday"></input>
+    </view>
+    <view class="content">
+      <text>学校</text>
+      <input name="hunter_school"></input>
+    </view>
+    <view class="content">
+      <text>专业</text>
+      <input name="hunter_specialty"></input>
+    </view>
+    <!--bindsubmit="formSubmit" formType="submit" -->
+
+    <button formType="submit" class="bt" style="width:26%;">确定</button>
+  </form>
+</view>

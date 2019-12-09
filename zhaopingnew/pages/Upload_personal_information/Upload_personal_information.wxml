@@ -1,0 +1,32 @@
+<!--pages/Upload_personal_information/Upload_personal_information.wxml-->
+<text>上传求职资料</text>
+<form bindsubmit="information_submit">
+  <view>
+    <text>姓名：</text>
+    <input name="name" type="text" value="jjh"></input>
+    <text>性别：</text>
+    <radio-group class="radio-group" name="sex" bindchange="radioChange">
+      <radio class="radio" value="男">
+        <text>男</text>
+      </radio>
+      <radio class="radio" value="女">
+        <text>女</text>
+      </radio>
+    </radio-group>
+
+    <text class='textp'>身份证照片</text>
+    <text class='textp'>获奖照片</text>
+    <view class='photo'>
+      <image class='ph' src='{{photos}}' id="1" bindtap='touchphoto' mode='aspectFit'></image>
+      <image class='ph' src='{{photos2}}' id="2" bindtap='touchphoto' mode='aspectFit'></image>
+      <image class='phright' src='{{photos3}}' id="3" bindtap='touchphoto' mode='aspectFit'></image>
+    </view>
+    <text class='text'>正面</text>
+    <text class='text2'>反面</text>
+    <text class='text3'>获奖照片</text>
+
+
+
+    <button formType="submit">上传</button>
+  </view>
+</form>

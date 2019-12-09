@@ -1,0 +1,12 @@
+<!--pages/log_in_interviewer/log_in_interviewer.wxml-->
+<text>你好面试官</text>
+<form bindsubmit="formSubmit">
+  <view>
+    <text>用户名：</text>
+    <input name="username" type="text" value="msg"></input>
+    <text>密码：</text>
+    <input name="password" type="text" password="true" value="msg"></input>
+    <button formType="submit">登陆</button>
+    <button bindtap="go_register">注册</button>
+  </view>
+</form>

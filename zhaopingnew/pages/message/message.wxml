@@ -1,0 +1,40 @@
+<!--pages/message/message.wxml-->
+
+<view class="list-container">
+  <view wx:for="{{ friends }}" wx:key="friends{{ index }}" class="list-row-wrapper" hover-class="list-row-hover" hover-stay-time="50" data-user="{{ item }}" bindtap="gotoChat">
+    <view class="list-row">
+      <view class="list-icon">
+        <view class="list-photo">
+          <image src="{{ item.photo }}" style="width: 50px; height: 50px;"></image>
+        </view>
+        <view wx:if="{{ item.nums > 0 }}" class="message-dot"></view>
+      </view>
+      <view class="list-content">
+        <view class="list-content-layout">
+          <view class="list-content-name">
+            <text class="list-content-title">{{ item.nickname }}</text>
+            <text class="list-content-time">{{ item.time }}</text>
+          </view>
+          <view class="list-content-brief">
+            <text>[{{ item.nums }}条]{{ item.message }}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view>
+
+
+  <input name="input_payload" bindinput="input_message"></input>
+  <text>发送给：</text>
+  <input name="send_object" bindinput="input_send_object" value="user0"></input>
+  <button bindtap="send_payload">发送</button>
+  <view wx:for="{{data}}" wx:key="key">{{item}}</view>
+  <button bindtap="flogout">登出</button>
+  <button bindtap="go_video_call">视频聊天</button>
+  <button bindtap="upLoadAction">选择文件</button>
+  <text>{{filepath}}</text>
+
+  <button bindtap="upLoadConfirm">确定</button>
+</view>

@@ -1,0 +1,36 @@
+<!--pages/identity_verification/identity_verification.wxml-->
+<view class="container">
+  <!-- <image class="bgImg" src="../images/identity_verification_background.png" mode="aspectFill"></image> -->
+  <view class="bgImg left"></view>
+  <view class="bgImg right"></view>
+  <view class="other-wigdget">
+    <view class="title">
+      <text class="title font">请选择您的身份</text>
+      <view style="display:flex;flex-direction:row;">
+        <view class="line"></view>
+        <view class="line2"></view>
+      </view>
+    </view>
+
+    <view class="flex-wrp" style="flex-direction:row;">
+      <image class="chooseidentityImg woman" src="../images/头像女.png" mode="widthFix" bindtap="select_hunter"></image>
+      <image class="chooseidentityImg man" src="../images/头像男.png" mode="widthFix" bindtap="select_interviewer"></image>
+    </view>
+    <form bindsubmit="go_login">
+      <view>
+        <radio-group class="radio-group" name="radio_identity" bindchange="radioChange">
+          <radio name="hunter" class="radio" style="margin-left: 18%;" value="面试者" checked="{{hunter_select}}">
+            <text style="color:#FFFFFF;font-size:18px">面试者</text>
+          </radio>
+          <radio name="interviewer" class="radio" style="float:right;margin-right: 18%" value="面试官" checked="{{interviewer_select}}">
+            <text style=" color:#928383;font-size:18px ">面试官</text>
+          </radio>
+        </radio-group>
+        <button formType="submit">确认</button>
+      </view>
+    </form>
+
+
+  </view>
+  <!-- other widget希望是放在背景图片之上的 -->
+</view>

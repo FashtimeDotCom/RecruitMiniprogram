@@ -1,0 +1,10 @@
+<!--pages/sendresume/sendresume.wxml-->
+<view class="personinfo">
+  <view class="personinfo-right">
+    <text class="user name">{{userInfo.nickName}}</text>
+    <view class="user ident" hidden="{{!userInfoFlag}}">学生</view>
+    <text class="user phone" hidden="{{!userInfoFlag}}">15067385088</text>
+  </view>
+  <image class="userinfo-avatar fl_l" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+</view>
+<view class="addinfo"></view>

@@ -1,0 +1,80 @@
+/* pages/order/order.wxss */
+.container{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(237,237,237);
+}
+.top{
+  width: 100%;
+  height: 80rpx;
+  background-color: rgb(197,184,158);
+  color: #fff;
+  text-align: center;
+  line-height: 80rpx;
+}
+.leftImg{
+  position: absolute;
+  left: 0;
+  width: 40rpx;
+  height: 40rpx;
+  margin: 20rpx 30rpx;
+}
+.content{
+  width: 100%;
+  position: absolute;
+  top:80rpx;
+}
+.nameView,.dateView,.timeView{
+  width: 80%;
+  height: 100rpx;
+  margin: 20rpx 10%;
+  display: flex;
+  flex-direction: row;
+}
+.nameView text,.dateView text,.timeView text{
+  width: 20%;
+  height: 60rpx;
+  margin: 20rpx 0;
+  color:rgb(172,140,77);
+  line-height: 60rpx;
+}
+.nameView input{
+  width: 80%;
+  height: 60rpx;
+  margin: 20rpx 0;
+  border-radius: 30rpx;
+  background-color: #fff;
+}
+.dateView input{
+  width: 70%;
+  height: 60rpx;
+  margin: 20rpx 0;
+  background-color: #fff;
+}
+.dateView image{
+  width: 60rpx;
+  height: 60rpx;
+  margin: 20rpx 0;
+}
+.timeView view{
+  width: 80%;
+  height: 60rpx;
+  margin: 20rpx 0;
+  line-height: 60rpx;
+  display: flex;
+  flex-direction: row;
+}
+.timeView input{
+  width: 160rpx;
+  height: 60rpx;
+  background-color: #fff;
+  line-height: 60rpx;
+  text-align: center;
+}
+.timeView text{
+  width: 100rpx;
+  height: 60rpx;
+  margin: 0;
+  line-height: 60rpx;
+  text-align: center;
+}

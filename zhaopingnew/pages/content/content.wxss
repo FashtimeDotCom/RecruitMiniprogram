@@ -1,0 +1,75 @@
+page {
+  background-color: #ededed;
+}
+
+.contain {
+  width: 96%;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 24rpx;
+}
+
+.titleImg {
+  width: 100%;
+  max-height: 300rpx;
+}
+
+.title {
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30rpx;
+  color: black;
+}
+
+._title {
+  height: 30rpx;
+  line-height: 30rpx;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  font-size: 30rpx;
+}
+
+.mapImg {
+  padding-top: 20rpx;
+  width: 96%;
+  margin: 0 auto;
+  max-height: 300rpx;
+}
+
+.mapImg image {
+  max-height: 300rpx;
+}
+
+.mapDetails {
+  height: 40rpx;
+  position: relative;
+  text-align: center;
+  left: 0;
+  bottom: 40rpx;
+  background-color: #aaa;
+}
+
+.textContent {
+  margin-top: 50rpx;
+  line-height: 40rpx;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btview {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100rpx;
+}
+
+.btview button {
+  width: 200rpx;
+  height: 60rpx;
+  font-size: 33rpx;
+  background-color: #e0cab5;
+  color: white;
+  align-items: center;
+  line-height: 60rpx;
+}

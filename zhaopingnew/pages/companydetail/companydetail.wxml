@@ -1,0 +1,57 @@
+<!--pages/companydetail/companydetail.wxml-->
+<view class="bigbody">
+  <view class="top">
+    <image class="topbgimg" src="../images/companydetail/topbg.jpg" mode="aspectFill">
+    </image>
+    <image class="headimg" src="../images/companydetail/head.jpg"></image>
+    <view class="attentioncontent">关注</view>
+    <image class="attention" src="../images/companydetail/atwhite.png"></image>
+    <text class="companyname">阿里巴巴网络技术有限公司</text>
+    <view class="line">
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="acontent">
+      <text class="fontbold">所需职位：</text>
+      <text class="end">UI设计师</text>
+    </view>
+    <view class="acontent">
+      <text class="fontbold">所需人数：</text>
+      <text class="redline">20</text>
+      <text class="end">人</text>
+    </view>
+    <view class="acontent">
+      <text class="fontbold">薪资：</text>
+      <text class="redline">10K-25K</text>
+      <text class="end">元</text>
+    </view>
+    <view class="line2"></view>
+    <view class="acontent">
+      <view class="square"></view>
+      <text class="smalltitle">待遇：</text>
+      <text class="detailcontent">基础工资+奖金+保险（转正后）</text>
+    </view>
+    <view class="acontent">
+      <view class="square"></view>
+      <text class="smalltitle">要求：</text>
+    </view>
+    <view class="acontent">
+      <text class="detailcontent">基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）</text>
+    </view>
+    <view class="acontent">
+      <view class="square"></view>
+      <text class="smalltitle">公司详情：</text>
+    </view>
+    <view class="acontent">
+      <image class="imgdetail" src="../images/4.jpg"></image>
+    </view>
+    <view class="acontent">
+      <text class="detailcontent">基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）</text>
+    </view>
+    <view class="line3"></view>
+    <view class="btview">
+      <button bindtap="gosendresume">投简历</button>
+      <button>私信</button>
+    </view>
+  </view>
+</view>

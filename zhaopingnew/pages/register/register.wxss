@@ -1,0 +1,70 @@
+/* pages/register/register.wxss */
+
+page {
+  height: 100%;
+  width: 100%;
+  background-color: #ededed;
+}
+
+.ablock {
+  margin-top: 23%;
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  width: 100%;
+}
+
+.font {
+  align-content: center;
+  font-family: Segoe UI;
+  font-size: 28px;
+  color: #e0cab5;
+}
+
+.line {
+  margin-left: 38%;
+  margin-top: 6%;
+  width: 24%;
+  height: 5rpx;
+  background: #e0cab5;
+}
+
+.myform {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.myform input {
+  float: right;
+  margin-right: 16%;
+  background-color: white;
+  border-radius: 6.9px;
+  font-family: Segoe UI;
+  width: 46%;
+}
+
+.radio-group {
+  float: right;
+  margin-right: 29%;
+}
+
+.myform text {
+  margin-left: 9%;
+  color: #9a6836;
+  font-size: 16.9px;
+}
+
+.content {
+  margin: 6%;
+}
+
+.bt {
+  margin: auto;
+  background-color:  #e0cab5;
+  color: white;
+  font-family: Segoe UI;
+  border-radius: 9.9px;
+}

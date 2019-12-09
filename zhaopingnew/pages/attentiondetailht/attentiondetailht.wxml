@@ -1,0 +1,2 @@
+<!--pages/attentiondetail/attentiondetail.wxml-->
+<text>{{id}}</text>

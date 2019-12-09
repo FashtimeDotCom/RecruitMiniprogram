@@ -1,0 +1,111 @@
+<!--pages/person/person.wxml-->
+<view class="backgroundcomb">
+  <view class="block1"> </view>
+  <view class="floatb one"></view>
+  <view class="floatb two"></view>
+
+  <view class="ablock" hidden="{{companyFlag}}">
+    <view class="personinfo">
+      <image class="userinfo-avatar fl_l" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <view class="personinfo-left">
+        <text class="user name">{{userInfo.nickName}}</text>
+        <text class="user numb" hidden="{{!userInfoFlag}}">(001)</text>
+        <text class="user compy" hidden="{{!userInfoFlag}}">阿里巴巴网络有限公司</text>
+        <view class="user sexandnum">
+          <view class="user sex" hidden="{{!userInfoFlag}}">
+            <image class="seximg" src="../images/personimgman.png"></image>
+            <text>男</text>
+          </view>
+          <text class="user phone" hidden="{{!userInfoFlag}}">15067385088</text>
+        </view>
+        <navigator url="../attention/attention" class="attention" hidden="{{!userInfoFlag}}">
+          <image src="../images/attention_select.png"></image>
+          <text>我的关注</text>
+        </navigator>
+        <button class="clickLogin" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" hidden="{{userInfoFlag}}">点击登录</button>
+        <view hidden="{{userInfoFlag}}">登陆后查看更多信息</view>
+      </view>
+    </view>
+    <navigator url="../information/information" class="acontent">
+      <image src="../images/presonimg1.png"></image>
+      <text>个人信息</text>
+    </navigator>
+    <navigator url="../resume/resume" class="acontent">
+      <image src="../images/presonimg2.png"></image>
+      <text>已收简历</text>
+    </navigator>
+    <navigator url="../schedule/schedule" class="acontent">
+      <image src="../images/presonimg3.png"></image>
+      <text>视频面试预约</text>
+    </navigator>
+    <navigator url="../recruitinfo/recruitinfo" class="acontent">
+      <image src="../images/presonimg4.png"></image>
+      <text>招聘信息</text>
+    </navigator>
+    <view class="acontent">
+      <image src="../images/presonimg5.png"></image>
+      <text>帮助</text>
+    </view>
+  </view>
+
+
+  <view class="ablock" hidden="{{hunterFlag}}">
+
+    <view class="personinfo">
+      <image class="userinfo-avatar fl_l" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <view class="personinfo-left">
+        <text class="user name">{{userInfo.nickName}}</text>
+        <view class="user numbandident">
+          <text class="user numb" hidden="{{!userInfoFlag}}">(001)</text>
+          <view class="user ident" hidden="{{!userInfoFlag}}">学生</view>
+        </view>
+        <text class="user compy" hidden="{{!userInfoFlag}}" maxlength="10">温州大学信息与计算机学科专业</text>
+        <view class="user sexandnum">
+          <view class="user sex" hidden="{{!userInfoFlag}}">
+            <image class="seximg" src="../images/personimgman.png"></image>
+            <text>男</text>
+          </view>
+
+          <text class="user phone" hidden="{{!userInfoFlag}}">15067385088</text>
+        </view>
+        <navigator url="../attention/attention" class="attention" hidden="{{!userInfoFlag}}">
+          <image src="../images/attention_select.png"></image>
+          <text>我的关注</text>
+        </navigator>
+        <button class="clickLogin" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" hidden="{{userInfoFlag}}">点击登录</button>
+        <view style="margin-left: 9.9%;" hidden="{{userInfoFlag}}">登陆后查看更多信息</view>
+      </view>
+    </view>
+
+    <navigator url="../information/information" class="acontent">
+      <image src="../images/presonimg1.png"></image>
+      <text>个人信息</text>
+    </navigator>
+    <navigator url="../resume/resume" class="acontent">
+      <image src="../images/presonimg2.png"></image>
+      <text>已发简历</text>
+    </navigator>
+    <navigator url="../schedule/schedule" class="acontent">
+      <image src="../images/presonimg3.png"></image>
+      <text>我的日程</text>
+    </navigator>
+    <view class="acontent">
+      <image src="../images/presonimg5.png"></image>
+      <text>帮助</text>
+    </view>
+
+
+  </view>
+
+</view>
+
+
+
+<view hidden="{{true}}">
+  <button class="clickLogin" lang="zh_CN" bindtap="onGotUserInfo" hidden="{{userInfoFlag}}">点击登录</button>
+  <button bindtap="goto_upload_ps_info">完善简历</button>
+  <text>用户名：</text>
+  <input name="userid" bindinput="input" value="user1"></input>
+  <button bindtap="tim_login">即时通讯登陆</button>
+
+</view>

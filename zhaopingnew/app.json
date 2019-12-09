@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/identity_verification/identity_verification",
+    "pages/companydetail/companydetail",
+    "pages/sendresume/sendresume",
+    "pages/Main/Main",
+    "pages/hunterlist/hunterlist",
+    "pages/attention/attention",
+    "pages/content/content",
+    "pages/information/information",
+    "pages/person/person",
+    "pages/recruitinfo/recruitinfo",
+    "pages/schedule/schedule",
+    "pages/chat/chat",
+    "pages/register/register",
+    "pages/message/message",
+    "pages/Upload_personal_information/Upload_personal_information",
+    "pages/log_in_hunter/log_in_hunter",
+    "pages/log_in_interviewer/log_in_interviewer",
+    "pages/logs/logs",
+    "pages/video_call_footage/room/room",
+    "pages/index/index",
+    "pages/choosecity/choosecity",
+    "pages/resume/resume",
+    "pages/order/order",
+    "pages/attentiondetailht/attentiondetailht",
+    "pages/attentiondetailcp/attentiondetailcp"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#C5B89E",
+    "navigationBarTitleText": "招聘",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#C5B89E",
+    "renderingMode": "seperated"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#FFFFFF",
+    "selectedColor": "#FFFFFF",
+    "backgroundColor": "#C5B89E",
+    "list": [
+      {
+        "pagePath": "pages/person/person",
+        "text": "个人中心",
+        "iconPath": "pages/images/imgperson.png",
+        "selectedIconPath": "pages/images/imgperson_select.png"
+      },
+      {
+        "pagePath": "pages/Main/Main",
+        "text": "主界面",
+        "iconPath": "pages/images/Main.png",
+        "selectedIconPath": "pages/images/Main_select.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "pages/images/message.png",
+        "selectedIconPath": "pages/images/message_select.png"
+      }
+    ]
+  }
+}

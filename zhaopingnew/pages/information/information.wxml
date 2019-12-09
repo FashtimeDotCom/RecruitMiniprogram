@@ -1,0 +1,76 @@
+<!--pages/information/information.wxml-->
+<view class="container">
+  <view hidden="{{companyFlag}}" class="content">
+    <form bindsubmit="companySubmit" class="myform">
+      <view class="item">
+        <view class="itemLeft"></view>
+        <view class="itemRight">
+          <view class="name">姓名</view>
+          <input class="nameType" name="name" type="text" value="{{name}}"></input>
+        </view>
+      </view>
+      <view class="item">
+        <view class="itemLeft"></view>
+        <view class="itemRight">
+          <view class="name">性别</view>
+          <input class="nameType" name="sex" type="text" value="{{sex}}"></input>
+        </view>
+      </view>
+      <view class="item">
+        <view class="itemLeft"></view>
+        <view class="itemRight">
+          <view class="name">电话</view>
+          <input class="nameType" name="telephone" type="text" value="{{telephone}}"></input>
+        </view>
+      </view>
+      <button formType="submit" class="bt">提交</button>
+    </form>
+  </view>
+  <view hidden="{{hunterFlag}}" class="content">
+    <form bindsubmit="hunterSubmit" class="myform">
+      <view class="item">
+        <view class="itemLeft"></view>
+        <view class="itemRight">
+          <view class="name">用户名</view>
+          <input class="nameType" name="name" value="{{name}}"></input>
+        </view>
+      </view>
+      <view class="item">
+        <view class="itemLeft"></view>
+        <view class="itemRight">
+          <view class="name">电话</view>
+          <input class="nameType" name="telephone" value="{{telephone}}"></input>
+        </view>
+      </view>
+      <view class="item">
+        <view class="itemLeft"></view>
+        <view class="itemRight">
+          <view class="name">性别</view>
+          <input class="nameType" name="sex" value="{{sex}}"></input>
+        </view>
+      </view>
+      <view class="item">
+        <view class="itemLeft"></view>
+        <view class="itemRight">
+          <view class="name">年龄</view>
+          <input class="nameType" name="age" value="{{age}}"></input>
+        </view>
+      </view>
+      <view class="item">
+        <view class="itemLeft"></view>
+        <view class="itemRight">
+          <view class="name">学校</view>
+          <input class="nameType" name="school" value="{{school}}"></input>
+        </view>
+      </view>
+      <view class="item">
+        <view class="itemLeft"></view>
+        <view class="itemRight">
+          <view class="name">专业</view>
+          <input class="nameType" name="major" value="{{major}}"></input>
+        </view>
+      </view>
+      <button formType="submit" class="bt">提交</button>
+    </form>
+  </view>
+</view>

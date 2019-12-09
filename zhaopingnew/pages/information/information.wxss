@@ -1,0 +1,69 @@
+/* pages/information/information.wxss */
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(237, 237, 237);
+}
+
+.leftImg {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 20rpx 30rpx;
+  float: left;
+}
+
+.rightImg {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 15rpx 30rpx;
+  float: right;
+}
+
+.content {
+  margin-top: 30%;
+  width: 100%;
+  height: 90%;
+}
+
+.item {
+  width: 100%;
+  height: 60rpx;
+  margin-bottom: 15rpx;
+}
+
+.itemLeft {
+  width: 2%;
+  height: 60rpx;
+  position: absolute;
+  left: 6%;
+  background-color: rgb(172, 140, 77);
+}
+
+.itemRight {
+  width: 80%;
+  height: 60rpx;
+  margin: 0 10%;
+  background-color: rgb(246, 246, 246);
+}
+
+.name {
+  width: 140rpx;
+  height: 100%;
+  margin: 0 10rpx;
+  line-height: 60rpx;
+  color: #000;
+  float: left;
+}
+
+.nameType {
+  height: 100%;
+  line-height: 60rpx;
+  color: rgb(169, 126, 41);
+  float: left;
+}
+
+button{
+  margin-top: 6%;
+  width: 303rpx;
+}

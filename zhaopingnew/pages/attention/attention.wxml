@@ -1,0 +1,37 @@
+<!--pages/attention/attention.wxml-->
+<view class="block" hidden="{{companyFlag}}">
+  <view url="../attentiondetailht/attentiondetailht?id={{item.id}}" class="acontent" wx:for="{{person}}" wx:key="{{index}}">
+    <image class="picture" src="{{item.picture}}"></image>
+    <view class="right">
+      <view class="righttop">
+        <text class="name">{{item.name}}</text>
+        <view class="sex">
+          <image class="seximg" wx:if="{{item.sex=='女'}}" src="../images/personimgwoman.png" mode="aspectFit"></image>
+          <image class="seximg" wx:if="{{item.sex=='男'}}" src="../images/personimgman.png" mode="aspectFit"></image>
+          <text class="sexfont">{{item.sex}}</text>
+        </view>
+        <view class="ident">{{item.ident}}</view>
+        <image class="attentionimg" src="../images/close.png"></image>
+      </view>
+      <view class="rightbottom">
+        <text class="detail">电话：{{item.phone}}</text>
+        <text class="detail">学校：{{item.school}}</text>
+        <text class="detail">专业：{{item.specialty}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="block" hidden="{{hunterFlag}}">
+  <navigator url="../attentiondetailcp/attentiondetailcp?id={{item.id}}" class="acontent" wx:for="{{company}}" wx:key="{{index}}">
+    <image class="picture" src="{{item.imagesrc}}"></image>
+    <view class="right">
+      <view class="righttop">
+        <text class="name">{{item.detailhead}}</text>
+      </view>
+      <view class="rightbottom">
+        <text class="detail">{{item.detailcontent}}</text>
+      </view>
+    </view>
+  </navigator>
+</view>

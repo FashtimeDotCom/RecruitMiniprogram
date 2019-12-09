@@ -1,0 +1,51 @@
+<!--pages/Main/Main.wxml-->
+<view class="bigbody">
+  <view class="topcolumn">
+    <view class="location" bindtap="getcity">{{city}}</view>
+    <view class="topinputcomb">
+      <image class='topinputimg' src="../images/topinputimg.png"></image>
+      <input class="topinput"></input>
+    </view>
+    <image class='userinfo-avatar' src="{{userInfo.avatarUrl}}" bindtap="goperson"></image>
+  </view>
+  <view class="secondtitle">
+    <image class="secondimg" src="../images/secondimg.jpg" mode="aspectFill"></image>
+    <view class="secondbottom">
+      <view>招聘会</view>
+      <view>公司</view>
+      <view bindtap="gohunterlist">面试者</view>
+    </view>
+  </view>
+  <view class="line"></view>
+  <scroll-view class="thebottom" scroll-y>
+    <swiper class="aswiper" indicator-dots="true" indicator-active-color="#996600" autoplay="true" circular="true">
+      <swiper-item>
+        <image src="../images/5.jpg" mode="aspectFit"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../images/6.jpeg" mode="aspectFit"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../images/7.jpg" mode="aspectFit"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../images/8.jpg" mode="aspectFit"></image>
+      </swiper-item>
+    </swiper>
+
+    <view class="oneofbottom" wx:for="{{company}}" wx:key="{{index}}">
+      <navigator url="../companydetail/companydetail?id={{item.id}}" class="notline">
+        <image src="{{item.imagesrc}}"></image>
+        <view class="oneofcontent">
+          <text class="detailhead">{{item.detailhead}}</text>
+          <text class="detailcontent">{{item.detailcontent}}</text>
+        </view>
+        <view class="salaryjob">
+          <text class="salary">{{item.salary}}</text>
+          <text class="job">{{item.job}}</text>
+        </view>
+      </navigator>
+      <view class="line2"></view>
+    </view>
+  </scroll-view>
+</view>

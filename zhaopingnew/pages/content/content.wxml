@@ -1,0 +1,18 @@
+<view class="contain">
+  <image class="titleImg" src="{{content.title_img}}"></image>
+  <view class="title">{{content.title}}</view>
+  <view class="_title">{{content._title}}</view>
+  <view class="mapImg">
+    <view>招聘会分布图：</view>
+    <image class="titleImg" src="{{content.map_img}}"></image>
+    <view class="mapDetails" bindtap="goToDetail">点击此处查看详情>></view>
+  </view>
+  <view class="textContent" style="white-space:pre-wrap">
+    {{content.textContent}}
+  </view>
+  <view class="btview">
+    <button>加入</button>
+    <button>参会企业</button>
+  </view>
+</view>
+<view class=" {{isIpx ? 'blankView140' : 'blankView'}}"></view>

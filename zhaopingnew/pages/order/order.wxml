@@ -1,0 +1,32 @@
+<!--pages/order/order.wxml-->
+<view class="container">
+  <view class="top">
+    <image src="../../images/icon/whiteReturn.png" class="leftImg"></image>
+    面试预约
+  </view>
+  <view class="content">
+    <view class="nameView">
+      <text>姓名</text>
+      <input></input>
+    </view>
+    <view class="dateView">
+      <text>日期</text>
+      <input></input>
+      <picker mode="date" value='{{date}}' bindchange='bindDateChange'>
+        <image src="../../images/portrait/1.png"></image>
+      </picker>
+    </view>
+    <view class="timeView">
+      <text>时间段</text>
+      <view>
+        <picker mode="time" value='{{startTime}}' bindchange='bindtimeChange'>
+          <input placeholder="00:00"></input>
+        </picker>
+        <text>至</text>
+        <picker mode="time" value='{{endTime}}' bindchange='bindtimeChange'>
+          <input placeholder="00:00"></input>
+        </picker>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+{
+  "name": "zhaopingnew",
+  "version": "1.0.0",
+  "description": "这里是------description",
+  "main": "app.js",
+  "dependencies": {
+    "cos-wx-sdk-v5": "^0.7.8",
+    "tim-wx-sdk": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
