@@ -1,4 +1,3 @@
-<!--pages/resume/resume.wxml-->
 <view class="container">
   <view wx:if="{{hunterFlag}}" class="content">
     <view class="item" wx:for="{{array}}">
@@ -7,7 +6,7 @@
         <view class="name">{{item.name}}</view>
         <view class="time">{{item.time}}</view>
       </view>
-      <image wx:if="{{isSend}}" src="../images/icons/interviewerPass.png" class="interviewerPassImage"></image>
+      <image wx:if="{{isSend}}" src="../../src/images/icons/interviewerPass.png" class="interviewerPassImage"></image>
       <view wx:else class="interviewerPassView">通过
       </view>
     </view>
@@ -20,7 +19,7 @@
         <view class="time">{{item.time}}</view>
       </view>
       <view wx:if="{{isSend}}" class="intervieweeView">
-        <image src="../images/icons/interviewerPass.png" class="intervieweePassImage"></image>
+        <image src="../../src/images/icons/interviewerPass.png" class="intervieweePassImage"></image>
         <text class="intervieweePassText">已发送</text>
       </view>
       <view wx:else class="intervieweePassView">重发

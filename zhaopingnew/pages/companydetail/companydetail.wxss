@@ -1,5 +1,3 @@
-/* pages/companydetail/companydetail.wxss */
-
 page {
   background-color: #ededed;
   width: 100%;

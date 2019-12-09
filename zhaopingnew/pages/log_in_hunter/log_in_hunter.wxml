@@ -1,4 +1,3 @@
-<!--pages/log_in_hunter/log_in_hunter.wxml-->
 <text>你好求职者！</text>
 <form bindsubmit="formSubmit">
   <view>

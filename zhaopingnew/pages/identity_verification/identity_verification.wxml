@@ -1,4 +1,3 @@
-<!--pages/identity_verification/identity_verification.wxml-->
 <view class="container">
   <!-- <image class="bgImg" src="../images/identity_verification_background.png" mode="aspectFill"></image> -->
   <view class="bgImg left"></view>
@@ -13,8 +12,8 @@
     </view>
 
     <view class="flex-wrp" style="flex-direction:row;">
-      <image class="chooseidentityImg woman" src="../images/头像女.png" mode="widthFix" bindtap="select_hunter"></image>
-      <image class="chooseidentityImg man" src="../images/头像男.png" mode="widthFix" bindtap="select_interviewer"></image>
+      <image class="chooseidentityImg woman" src="../../src/images/头像女.png" mode="widthFix" bindtap="select_hunter"></image>
+      <image class="chooseidentityImg man" src="../../src/images/头像男.png" mode="widthFix" bindtap="select_interviewer"></image>
     </view>
     <form bindsubmit="go_login">
       <view>

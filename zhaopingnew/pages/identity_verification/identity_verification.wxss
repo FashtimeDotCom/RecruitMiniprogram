@@ -1,5 +1,3 @@
-/* pages/identity_verification/identity_verification.wxss */
-
 page {
   height: 100%;
   width: 100%;

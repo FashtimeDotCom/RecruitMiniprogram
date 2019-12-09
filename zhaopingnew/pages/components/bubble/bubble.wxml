@@ -1,4 +1,3 @@
-<!--components/bubble /bubble.wxml-->
 <template name="bubble">
     <view id="{{ id }}" class="bubble-container" wx:if="{{ messageType === 1 }}">
       <view class="icon">

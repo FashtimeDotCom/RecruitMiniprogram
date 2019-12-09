@@ -1,11 +1,10 @@
-<!--pages/companydetail/companydetail.wxml-->
 <view class="bigbody">
   <view class="top">
-    <image class="topbgimg" src="../images/companydetail/topbg.jpg" mode="aspectFill">
+    <image class="topbgimg" src="../../src/images/companydetail/topbg.jpg" mode="aspectFill">
     </image>
-    <image class="headimg" src="../images/companydetail/head.jpg"></image>
+    <image class="headimg" src="../../src/images/companydetail/head.jpg"></image>
     <view class="attentioncontent">关注</view>
-    <image class="attention" src="../images/companydetail/atwhite.png"></image>
+    <image class="attention" src="../../src/images/companydetail/atwhite.png"></image>
     <text class="companyname">阿里巴巴网络技术有限公司</text>
     <view class="line">
     </view>
@@ -43,7 +42,7 @@
       <text class="smalltitle">公司详情：</text>
     </view>
     <view class="acontent">
-      <image class="imgdetail" src="../images/4.jpg"></image>
+      <image class="imgdetail" src="../../src/images/4.jpg"></image>
     </view>
     <view class="acontent">
       <text class="detailcontent">基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）</text>

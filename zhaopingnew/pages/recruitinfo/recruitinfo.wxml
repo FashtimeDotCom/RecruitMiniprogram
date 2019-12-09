@@ -1,4 +1,3 @@
-<!--pages/recruitinfo/recruitinfo.wxml-->
 <view class="container">
   <view wx:if="{{companyFlag}}" class="content">
     <view class="item" wx:for="{{array}}">
@@ -7,7 +6,7 @@
         <view class="time">{{item.time}}</view>
       </view>
       <view wx:if="{{isSend}}" class="intervieweeView">
-        <image src="../images/icons/greencheck.png" class="intervieweePassImage"></image>
+        <image src="../../src/images/icons/greencheck.png" class="intervieweePassImage"></image>
         <text class="intervieweePassText">已发送</text>
       </view>
       <view wx:else class="intervieweePassView">重发

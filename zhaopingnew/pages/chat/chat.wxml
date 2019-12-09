@@ -1,4 +1,3 @@
-<!--chat.wxml-->
 <import src="../../components/bubble/bubble.wxml" />
 <view class="container">
   <scroll-view scroll-y scroll-with-animation class="chat-content" scroll-top="{{ scrollTop }}" scroll-into-view="{{ lastId }}">

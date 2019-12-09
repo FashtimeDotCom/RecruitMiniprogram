@@ -1,5 +1,3 @@
-/* pages/attention/attention.wxss */
-
 .block {
   width: 100%;
   height: 100%;

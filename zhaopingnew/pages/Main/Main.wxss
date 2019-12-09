@@ -1,5 +1,3 @@
-/* pages/Main/Main.wxss */
-
 page {
   background-color: #ededed;
   width: 100%;

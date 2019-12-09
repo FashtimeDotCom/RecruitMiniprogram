@@ -41,13 +41,172 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 21,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/Main/Main",
+					"pathName": "pages/Main/Main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "主界面",
+					"pathName": "pages/Main/Main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "选择身份",
+					"pathName": "pages/identity_verification/identity_verification",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "公司详情",
+					"pathName": "pages/companydetail/companydetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/sendresume/sendresume",
+					"pathName": "pages/sendresume/sendresume",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "职员列表",
+					"pathName": "pages/hunterlist/hunterlist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "关注",
+					"pathName": "pages/attention/attention",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "招聘会",
+					"pathName": "pages/content/content",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "信息",
+					"pathName": "pages/information/information",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 9,
+					"name": "个人中心",
+					"pathName": "pages/person/person",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 10,
+					"name": "招聘信息",
+					"pathName": "pages/recruitinfo/recruitinfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 11,
+					"name": "我的日程",
+					"pathName": "pages/schedule/schedule",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 12,
+					"name": "聊天界面",
+					"pathName": "pages/chat/chat",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 13,
+					"name": "登录",
+					"pathName": "pages/register/register",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 14,
+					"name": "消息",
+					"pathName": "pages/message/message",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 15,
+					"name": "上传求职资料",
+					"pathName": "pages/Upload_personal_information/Upload_personal_information",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 16,
+					"name": "求职者登录",
+					"pathName": "pages/log_in_hunter/log_in_hunter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "招聘者登录",
+					"pathName": "pages/log_in_interviewer/log_in_interviewer",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 18,
+					"name": "视频",
+					"pathName": "pages/video_call_footage/room/room",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 19,
+					"name": "地址选择",
+					"pathName": "pages/choosecity/choosecity",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 20,
+					"name": "投简历发送",
+					"pathName": "pages/resume/resume",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 21,
+					"name": "预约面试",
+					"pathName": "pages/order/order",
+					"query": "",
+					"scene": null
+				}
+			]
 		}
 	}
 }

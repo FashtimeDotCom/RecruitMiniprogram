@@ -1,4 +1,3 @@
-<!--pages/attention/attention.wxml-->
 <view class="block" hidden="{{companyFlag}}">
   <view class="acontent" wx:for="{{person}}" wx:key="{{index}}">
     <image class="picture" src="{{item.picture}}"></image>
@@ -6,14 +5,14 @@
       <view class="righttop">
         <text class="name">{{item.name}}</text>
         <view class="sex">
-          <image class="seximg" wx:if="{{item.sex=='女'}}" src="../images/personimgwoman.png" mode="aspectFit"></image>
-          <image class="seximg" wx:if="{{item.sex=='男'}}" src="../images/personimgman.png" mode="aspectFit"></image>
+          <image class="seximg" wx:if="{{item.sex=='女'}}" src="../../src/images/personimgwoman.png" mode="aspectFit"></image>
+          <image class="seximg" wx:if="{{item.sex=='男'}}" src="../../src/images/personimgman.png" mode="aspectFit"></image>
           <text class="sexfont">{{item.sex}}</text>
         </view>
         <view class="ident">{{item.ident}}</view>
         <view class="attention">
           <view class="attentioncontent">关注</view>
-          <image class="attentionimg" src="../images/companydetail/atwhite.png"></image>
+          <image class="attentionimg" src="../../src/images/companydetail/atwhite.png"></image>
         </view>
       </view>
       <view class="rightbottom">

@@ -1,4 +1,3 @@
-// pages/choosecity/choosecity.js
 var app = getApp();
 var $ = require('../../libs/conf.js');
 var city = require('../../libs/city.js');
@@ -9,9 +8,6 @@ var markersData = {
   key: "390d74647314d0a913c31dd3e0d6e199"//申请的高德地图key
 };
 Page({
-  /**
-   * 页面的初始数据
-   */
   data: {
     //城市下拉
     city: null,
@@ -59,55 +55,6 @@ Page({
       hotCityData: city.hot
     });
     console.log(this.data.cityData)
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function() {
-
   },
 
   //搜索关键字

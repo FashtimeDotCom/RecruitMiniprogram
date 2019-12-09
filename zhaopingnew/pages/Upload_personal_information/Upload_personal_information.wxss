@@ -1,4 +1,3 @@
-/* pages/Upload_personal_information/Upload_personal_information.wxss */
 .photo {
   display: flex;
  margin-top: 10px;

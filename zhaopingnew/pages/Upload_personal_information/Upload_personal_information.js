@@ -1,17 +1,12 @@
-// pages/Upload_personal_information/Upload_personal_information.js
 var app = getApp();
 const httputil = require("./httputil.js")
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
     name: "",
     sex: "",
-    photos: "/pages/images/plus.png",
-    photos2: "/pages/images/plus.png",
-    photos3: "/pages/images/plus.png"
+    photos: "../../src/images/plus.png",
+    photos2: "../../src/pages/images/plus.png",
+    photos3: "../../src/pages/images/plus.png"
   },
 
 
@@ -75,61 +70,5 @@ Page({
         }
       })
     }
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function(options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function() {
-
   }
 })

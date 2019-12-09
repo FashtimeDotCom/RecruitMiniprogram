@@ -1,9 +1,7 @@
-<!--pages/person/person.wxml-->
 <view class="backgroundcomb">
   <view class="block1"> </view>
   <view class="floatb one"></view>
   <view class="floatb two"></view>
-
   <view class="ablock" hidden="{{companyFlag}}">
     <view class="personinfo">
       <image class="userinfo-avatar fl_l" src="{{userInfo.avatarUrl}}" background-size="cover"></image>

@@ -1,8 +1,5 @@
-//chat.js
-//获取应用实例
 const app = getApp()
 const msgs = require('./chat-mock-data.js');
-
 Page({
   data: {
     messages: [],         // 聊天记录

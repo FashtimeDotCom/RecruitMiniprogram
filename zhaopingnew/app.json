@@ -17,14 +17,10 @@
     "pages/Upload_personal_information/Upload_personal_information",
     "pages/log_in_hunter/log_in_hunter",
     "pages/log_in_interviewer/log_in_interviewer",
-    "pages/logs/logs",
     "pages/video_call_footage/room/room",
-    "pages/index/index",
     "pages/choosecity/choosecity",
     "pages/resume/resume",
-    "pages/order/order",
-    "pages/attentiondetailht/attentiondetailht",
-    "pages/attentiondetailcp/attentiondetailcp"
+    "pages/order/order"
   ],
   "permission": {
     "scope.userLocation": {
@@ -48,20 +44,20 @@
       {
         "pagePath": "pages/person/person",
         "text": "个人中心",
-        "iconPath": "pages/images/imgperson.png",
-        "selectedIconPath": "pages/images/imgperson_select.png"
+        "iconPath": "src/images/imgperson.png",
+        "selectedIconPath": "src/images/imgperson_select.png"
       },
       {
         "pagePath": "pages/Main/Main",
         "text": "主界面",
-        "iconPath": "pages/images/Main.png",
-        "selectedIconPath": "pages/images/Main_select.png"
+        "iconPath": "src/images/Main.png",
+        "selectedIconPath": "src/images/Main_select.png"
       },
       {
         "pagePath": "pages/message/message",
         "text": "消息",
-        "iconPath": "pages/images/message.png",
-        "selectedIconPath": "pages/images/message_select.png"
+        "iconPath": "src/images/message.png",
+        "selectedIconPath": "src/images/message_select.png"
       }
     ]
   }

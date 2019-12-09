@@ -1,13 +1,7 @@
-// pages/content/content.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
     content: {
-      text: "1234\n12341",
-      title_img: "../images/7.jpg",
+      title_img: "../../src/images/7.jpg",
       map_img: "https://pic.cnblogs.com/avatar/540671/20171107171321.png",
       title: "温州大学招聘会",
       _title: "2019",
@@ -15,10 +9,6 @@ Page({
     }
 
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function(options) {
     var that = this;
     that.setData({

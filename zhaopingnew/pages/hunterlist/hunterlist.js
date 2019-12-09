@@ -1,16 +1,12 @@
-// pages/attention/attention.js
 var app = getApp();
 Page({
-  /**
-   * 页面的初始数据
-   */
   data: {
     p_identity: "",
     companyFlag: false,
     hunterFlag: false,
     person: [{
         id: 0,
-        picture: "../images/头像小集/头像女.png",
+        picture: "../../src/images/头像小集/头像女.png",
         name: "江琳娜",
         sex: "女",
         ident: "学生",
@@ -20,7 +16,7 @@ Page({
       },
       {
         id: 1,
-        picture: "../images/头像小集/头像男.png",
+        picture: "../../src/images/头像小集/头像男.png",
         name: "程瑞",
         sex: "男",
         ident: "学生",
@@ -30,7 +26,7 @@ Page({
       },
       {
         id: 2,
-        picture: "../images/头像小集/微信图片_20191126191155.jpg",
+        picture: "../../src/images/头像小集/微信图片_20191126191155.jpg",
         name: "西瓜",
         sex: "男",
         ident: "学生",
@@ -61,53 +57,4 @@ Page({
       });
     }
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function() {
-
-  }
 })

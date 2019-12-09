@@ -1,5 +1,3 @@
-/* pages/sendresume/sendresume.wxss */
-
 .personinfo {
   width: 100%;
   display: flex;

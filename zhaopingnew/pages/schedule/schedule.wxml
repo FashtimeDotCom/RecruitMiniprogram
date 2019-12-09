@@ -1,5 +1,3 @@
-<!--pages/schedule/schedule.wxml-->
-<!--pages/attention/attention.wxml-->
 <view class="block" hidden="{{companyFlag}}">
   <view class="acontent" wx:for="{{person}}" wx:key="{{index}}">
     <view class="start" style="background-color:{{item.color.round}}"></view>

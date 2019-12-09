@@ -1,4 +1,3 @@
-<!--pages/log_in_interviewer/log_in_interviewer.wxml-->
 <text>你好面试官</text>
 <form bindsubmit="formSubmit">
   <view>

@@ -1,4 +1,3 @@
-<!--pages/register/register.wxml-->
 <view class="ablock" hidden="{{companyFlag}}">
   <view class="title">
     <text class="title font">欢迎加入XX招聘</text>

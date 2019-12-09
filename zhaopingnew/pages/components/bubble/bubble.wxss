@@ -1,4 +1,3 @@
-/* components/bubble /bubble.wxss */
 .bubble-container {
   position: relative;
   display: flex;
