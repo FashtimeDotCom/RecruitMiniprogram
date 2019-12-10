@@ -6,7 +6,7 @@ Page({
     hunterFlag: false,
     person: [{
         id: 0,
-        picture: "../../src/images/头像小集/头像女.png",
+      picture: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575954140366&di=3c69f9a565c5c3d9fa3060ba5ca6e41f&imgtype=0&src=http%3A%2F%2Fpic2.zhimg.com%2F50%2Fv2-1c3bd9fe6c6a28c5ca3a678549dfde28_hd.jpg",
         name: "江琳娜",
         sex: "女",
         ident: "学生",
@@ -16,7 +16,7 @@ Page({
       },
       {
         id: 1,
-        picture: "../../src/images/头像小集/头像男.png",
+        picture: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575954151817&di=41b9bf6c2d81e67a96840fc09aae04e5&imgtype=0&src=http%3A%2F%2Fpic4.zhimg.com%2F50%2Fv2-2a62bc350375166e53cc9d7cbaeed73e_hd.jpg",
         name: "程瑞",
         sex: "男",
         ident: "学生",
@@ -26,7 +26,7 @@ Page({
       },
       {
         id: 2,
-        picture: "../../src/images/头像小集/微信图片_20191126191155.jpg",
+        picture: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575954151814&di=1ddc109e101e244781ad22ce2371f672&imgtype=0&src=http%3A%2F%2Fpic3.zhimg.com%2F50%2Fv2-5b0251b83cd145e2d6231cefd9865413_hd.jpg",
         name: "西瓜",
         sex: "男",
         ident: "学生",

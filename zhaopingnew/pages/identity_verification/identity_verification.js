@@ -23,17 +23,11 @@ Page({
   go_login: function(e) {
     identity = app.globalData.identity;
     console.log(identity);
-    if (e.detail.value.radio_identity == "面试官") {
+    if (e.detail.value.radio_identity) {
       app.globalData.identity = e.detail.value.radio_identity
       console.log('form发生了submit事件，携带数据为：', app.globalData.identity)
       wx.switchTab({
-        url: '../Main/Main',
-      })
-    } else if (e.detail.value.radio_identity == "面试者") {
-      app.globalData.identity = e.detail.value.radio_identity
-      console.log('form发生了submit事件，携带数据为：', app.globalData.identity)
-      wx.switchTab({
-        url: '../Main/Main',
+        url: '../main/main',
       })
     } else {
       console.log('请选择身份')

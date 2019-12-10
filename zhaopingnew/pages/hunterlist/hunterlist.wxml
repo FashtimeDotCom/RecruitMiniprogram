@@ -12,7 +12,7 @@
         <view class="ident">{{item.ident}}</view>
         <view class="attention">
           <view class="attentioncontent">关注</view>
-          <image class="attentionimg" src="../../src/images/companydetail/atwhite.png"></image>
+          <image class="attentionimg" src="../../src/images/attention.png"></image>
         </view>
       </view>
       <view class="rightbottom">

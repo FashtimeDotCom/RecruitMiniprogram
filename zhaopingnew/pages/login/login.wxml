@@ -1,4 +1,4 @@
-<text>你好求职者！</text>
+<text>你好{{identity}}！</text>
 <form bindsubmit="formSubmit">
   <view>
     <text>用户名：</text>

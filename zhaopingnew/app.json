@@ -3,7 +3,7 @@
     "pages/identity_verification/identity_verification",
     "pages/companydetail/companydetail",
     "pages/sendresume/sendresume",
-    "pages/Main/Main",
+    "pages/main/main",
     "pages/hunterlist/hunterlist",
     "pages/attention/attention",
     "pages/content/content",
@@ -15,8 +15,7 @@
     "pages/register/register",
     "pages/message/message",
     "pages/Upload_personal_information/Upload_personal_information",
-    "pages/log_in_hunter/log_in_hunter",
-    "pages/log_in_interviewer/log_in_interviewer",
+    "pages/login/login",
     "pages/video_call_footage/room/room",
     "pages/choosecity/choosecity",
     "pages/resume/resume",
@@ -48,7 +47,7 @@
         "selectedIconPath": "src/images/imgperson_select.png"
       },
       {
-        "pagePath": "pages/Main/Main",
+        "pagePath": "pages/main/main",
         "text": "主界面",
         "iconPath": "src/images/Main.png",
         "selectedIconPath": "src/images/Main_select.png"

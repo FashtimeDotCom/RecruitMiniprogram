@@ -5,15 +5,15 @@ Page({
     hunterFlag: true,
     title: "已收简历",
     array: [{
-      'image': '../images/头像小集/微信图片_20191126191155.jpg',
+      'image': 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575953012838&di=7b74e34cd1a30a149a24041894a2ba0c&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201711%2F09%2F20171109200813_2vtKE.thumb.700_0.jpeg',
       'name': 'gxc',
       'time': '11-22 19:30:01'
     }, {
-      'image': '../images/头像小集/微信图片_20191126191210.jpg',
+        'image': 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575953012838&di=7b74e34cd1a30a149a24041894a2ba0c&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201711%2F09%2F20171109200813_2vtKE.thumb.700_0.jpeg',
       'name': 'gxc',
       'time': '11-22 19:30:01'
     }, {
-      'image': '../images/头像小集/微信图片_20191125213441.png',
+        'image': 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575953012838&di=7b74e34cd1a30a149a24041894a2ba0c&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201711%2F09%2F20171109200813_2vtKE.thumb.700_0.jpeg',
       'name': 'gxc',
       'time': '11-22 19:30:01'
     }],
