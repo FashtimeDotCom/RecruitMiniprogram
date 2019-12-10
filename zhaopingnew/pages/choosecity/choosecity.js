@@ -19,9 +19,8 @@ Page({
   },
   cityconfirm: function(e) {
     app.globalData.city = this.data.city;
-    console.log(app.globalData.city)
     wx.switchTab({
-      url: '/pages/Main/Main',
+      url: '../main/main',
     })
   },
   /**
@@ -86,7 +85,7 @@ Page({
     app.globalData.city = this.data.thisscanf;
     console.log(app.globalData.city)
     wx.switchTab({
-      url: '/pages/Main/Main',
+      url: '/pages/main/main',
     })
   },
 
