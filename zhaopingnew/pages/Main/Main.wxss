@@ -16,7 +16,9 @@ page {
   display: flex;
   justify-content: space-around;
   margin-top: 3%;
-  align-items: center;
+  line-height: 54rpx;
+  min-height: 54rpx;
+  max-height: 54rpx;
 }
 
 .location {
@@ -74,6 +76,7 @@ page {
   height: 46%;
   margin-top: 1.9%;
   position: relative;
+  max-height: 260rpx;
 }
 
 .secondbottom {

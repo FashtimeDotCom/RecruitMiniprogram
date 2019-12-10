@@ -10,20 +10,21 @@
   <view class="secondtitle">
     <image class="secondimg" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575955476866&di=5a15acee513fdb7d16a030f79fda3519&imgtype=0&src=http%3A%2F%2Fwww.0839gz.com%2Fdata%2Fupload%2Fjobfair%2F17%2F02%2F15%2F58a40de28241b.jpg" mode="aspectFill"></image>
     <view class="secondbottom">
-      <view>招聘会</view>
-      <view>公司</view>
+      <view bindtap="show_jobfair">招聘会</view>
+      <view bindtap="show_company">公司</view>
       <view wx:if="{{is_interviewer}}" bindtap="gohunterlist">面试者</view>
     </view>
   </view>
   <view class="line"></view>
   <scroll-view class="thebottom" scroll-y>
-    <swiper class="aswiper" indicator-dots="true" indicator-active-color="#996600" autoplay="true" circular="true">
+
+    <swiper class="aswiper" indicator-dots="true" indicator-active-color="#996600" autoplay="true" circular="true" hidden="{{show_jobfair}}">
       <swiper-item wx:for="{{swipImg}}">
         <image src="{{item}}" mode="aspectFit"></image>
       </swiper-item>
     </swiper>
 
-    <view class="oneofbottom" wx:for="{{company}}" wx:key="{{index}}">
+    <view class="oneofbottom" wx:for="{{company}}" wx:key="{{index}}" hidden="{{show_company}}">
       <navigator url="../companydetail/companydetail?id={{item.id}}" class="notline">
         <image src="{{item.imagesrc}}"></image>
         <view class="oneofcontent">

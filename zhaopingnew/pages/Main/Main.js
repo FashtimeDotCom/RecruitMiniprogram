@@ -9,6 +9,8 @@ Page({
   data: {
     locationinfo: null,
     city: '获取地理位置',
+    show_jobfair:false,
+    show_company:true,
     company: [{
         id: 0,
       imagesrc: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575954983732&di=816a8f8b150683965bdae5fe5376b7b7&imgtype=0&src=http%3A%2F%2Fi4.hexun.com%2F2018-04-09%2F192792045.jpg",
@@ -83,6 +85,7 @@ Page({
           fail: function(info) {}
         });
       }
+      
     })
 
 
@@ -119,5 +122,17 @@ Page({
     wx.switchTab({
       url: '../person/person',
     })
+  },
+  show_jobfair: function () {
+    this.setData({
+      show_jobfair: false,
+      show_company: true
+    });
+  },
+  show_company: function () {
+    this.setData({
+      show_jobfair: true,
+      show_company: false
+    });
   },
 })
