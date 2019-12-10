@@ -59,6 +59,9 @@ Page({
    */
   onLoad: function(options) {
     var that = this;
+    let identity = getApp().globalData.identity;
+    var is_interviewer = identity=="面试官"?true:false;
+    that.setData({ is_interviewer});
     wx.getLocation({
       type: 'wgs84',
       success(res) {
@@ -82,13 +85,6 @@ Page({
       }
     })
 
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function() {
 
   },
 

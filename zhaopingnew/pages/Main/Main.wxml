@@ -12,7 +12,7 @@
     <view class="secondbottom">
       <view>招聘会</view>
       <view>公司</view>
-      <view bindtap="gohunterlist">面试者</view>
+      <view wx:if="{{is_interviewer}}" bindtap="gohunterlist">面试者</view>
     </view>
   </view>
   <view class="line"></view>
