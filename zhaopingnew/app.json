@@ -1,14 +1,18 @@
 {
   "pages": [
     "pages/identity_verification/identity_verification",
-    "pages/companydetail/companydetail",
+    "pages/resumedetail/resumedetail",
     "pages/sendresume/sendresume",
+    "pages/add_educational_experience/add_educational_experience",
+    "pages/add_work_experience/add_work_experience",
+    "pages/add_self_description/add_self_description",
+    "pages/person/person",
+    "pages/companydetail/companydetail",
     "pages/main/main",
     "pages/hunterlist/hunterlist",
     "pages/attention/attention",
     "pages/content/content",
     "pages/information/information",
-    "pages/person/person",
     "pages/recruitinfo/recruitinfo",
     "pages/schedule/schedule",
     "pages/chat/chat",
@@ -19,7 +23,8 @@
     "pages/video_call_footage/room/room",
     "pages/choosecity/choosecity",
     "pages/resume/resume",
-    "pages/order/order"
+    "pages/order/order",
+    "pages/add_project_experience/add_project_experience"
   ],
   "permission": {
     "scope.userLocation": {

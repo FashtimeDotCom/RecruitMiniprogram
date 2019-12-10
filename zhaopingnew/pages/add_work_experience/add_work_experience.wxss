@@ -1,0 +1,68 @@
+/* pages/add_work_experience/add_work_experience.wxss */
+
+page {
+  height: 100%;
+  width: 100%;
+  background-color: #ededed;
+}
+
+.font {
+  align-content: center;
+  font-family: Segoe UI;
+  font-size: 28px;
+  color: #e0cab5;
+}
+
+.myform {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.myform input {
+  float: right;
+  margin-right: 16%;
+  background-color: white;
+  border-radius: 6.9px;
+  font-family: Segoe UI;
+  width: 46%;
+}
+
+.myform text {
+  margin-left: 9%;
+  color: #9a6836;
+  font-size: 16.9px;
+  font-weight: 500;
+}
+
+.content {
+  margin: 6%;
+}
+
+button {
+  margin-top: 60rpx;
+  width: 160rpx;
+  height: 60rpx;
+  font-size: 33rpx;
+  background-color: #e0cab5;
+  color: white;
+  align-items: center;
+  line-height: 60rpx;
+}
+
+textarea {
+  width: 93%;
+  background-color: white;
+  margin: 3% auto;
+}
+
+.mytitle {
+  color: #9a6836;
+  margin: 3% auto;
+  width: 79%;
+  padding: 3%;
+  padding-left: 9%;
+  display: flex;
+  border-radius: 30rpx;
+  background-color: #e6dcd3;
+}

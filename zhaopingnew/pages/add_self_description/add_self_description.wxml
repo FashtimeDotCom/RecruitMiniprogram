@@ -1,0 +1,3 @@
+<!--pages/add_self_description/add_self_description.wxml-->
+<textarea name="self_description"></textarea>
+<button>提交</button>

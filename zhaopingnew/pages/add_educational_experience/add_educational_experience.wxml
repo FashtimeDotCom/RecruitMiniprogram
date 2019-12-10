@@ -1,0 +1,28 @@
+<!--pages/add_work_experience/add_work_experience.wxml-->
+<form bindsubmit="Submit" class="myform">
+  <view class="mytitle">教育经历</view>
+  <view class="content">
+    <text>学校名称</text>
+    <input name="school_name" type="text"></input>
+  </view>
+  <view class="content">
+    <text>学历</text>
+    <input name="education_background" type="text"></input>
+  </view>
+  <view class="content">
+    <text>专业</text>
+    <input name="specialty" type="text"></input>
+  </view>
+  <view class="content">
+    <text>入学年份</text>
+    <input name="enrollment_year"></input>
+  </view>
+  <view class="content">
+    <text>毕业时间</text>
+    <input name="time_of_Graduation" type="text"></input>
+  </view>
+  <button formType="submit" style="width:26%;">保存</button>
+  <!-- </view> -->
+</form>
+
+

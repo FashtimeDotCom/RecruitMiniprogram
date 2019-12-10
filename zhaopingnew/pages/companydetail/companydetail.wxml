@@ -4,7 +4,7 @@
     </image>
     <image class="headimg" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575953571153&di=90f2dce94acfed5a1099924819eeb65f&imgtype=0&src=http%3A%2F%2Fmimg.shuaishou.com%2Fuserfiles%2F2016-3-2%2F5504.jpg"></image>
     <view class="attentioncontent">关注</view>
-    <image class="attention" src="../../src/images/attenttion.png"></image>
+    <image class="attention" src="../../src/images/attention.png"></image>
     <text class="companyname">阿里巴巴网络技术有限公司</text>
     <view class="line">
     </view>
