@@ -4,42 +4,41 @@
       <view  wx:if="{{template == 'grid'}}" slot="grid" style='height:100%;width:100%;position:absolute;'>
         <view class="operate">
           <view class='img-box'>
-            <image class='img-view' src='/pages/Resources/camera{{frontCamera?"":"-gray"}}.png' bindtap="changeCamera"></image>
+            <image class='img-view' src='../../../src/Resources/camera{{frontCamera?"":"-gray"}}.png' bindtap="changeCamera"></image>
           </view>
           <view class='img-box'>
-            <image class='img-view' src='/pages/Resources/{{beauty > 0? "beauty" : "beauty-dis"}}.png' bindtap="setBeauty"></image>
+            <image class='img-view' src='../../../src/Resources/{{beauty > 0? "beauty" : "beauty-dis"}}.png' bindtap="setBeauty"></image>
           </view>
           <view class='img-box'>
-            <image class='img-view' src='/pages/Resources/{{muted ? "mic-dis" : "mic"}}.png' bindtap="changeMute"></image>
+            <image class='img-view' src='../../../src/Resources/{{muted ? "mic-dis" : "mic"}}.png' bindtap="changeMute"></image>
           </view>
           <view class='img-box'>
-            <image class='img-view' src='/pages/Resources/{{debug? "log" : "log2"}}.png' bindtap="showLog"></image>
+            <image class='img-view' src='../../../../src/Resources/{{debug? "log" : "log2"}}.png' bindtap="showLog"></image>
           </view>
           <view class='img-box'> 
-            <image class='img-view' src='/pages/Resources/endcall.png' bindtap="goBack"></image>
+            <image class='img-view' src='../../../src/Resources/endcall.png' bindtap="goBack"></image>
           </view>
         </view>
       </view>
        <cover-view  wx:else slot="{{template}}" style='height:100%;width:100%;position: absolute;'>
         <cover-view class="operate">
           <cover-view class='img-box'>
-            <cover-image class='img-view' src='/pages/Resources/camera{{frontCamera?"":"-gray"}}.png' bindtap="changeCamera"></cover-image>
+            <cover-image class='img-view' src='../../../src/Resources/camera{{frontCamera?"":"-gray"}}.png' bindtap="changeCamera"></cover-image>
           </cover-view>
           <cover-view class='img-box'>
-            <cover-image class='img-view' src='/pages/Resources/{{beauty > 0? "beauty" : "beauty-dis"}}.png' bindtap="setBeauty"></cover-image>
+            <cover-image class='img-view' src='../../../src/Resources/{{beauty > 0? "beauty" : "beauty-dis"}}.png' bindtap="setBeauty"></cover-image>
           </cover-view>
           <cover-view class='img-box'>
-            <cover-image class='img-view' src='/pages/Resources/{{muted ? "mic-dis" : "mic"}}.png' bindtap="changeMute"></cover-image>
+            <cover-image class='img-view' src='../../../src/Resources/{{muted ? "mic-dis" : "mic"}}.png' bindtap="changeMute"></cover-image>
           </cover-view>
           <cover-view class='img-box'>
-            <cover-image class='img-view' src='/pages/Resources/{{debug? "log" : "log2"}}.png' bindtap="showLog"></cover-image>
+            <cover-image class='img-view' src='../../../src/Resources/{{debug? "log" : "log2"}}.png' bindtap="showLog"></cover-image>
           </cover-view>
           <cover-view class='img-box'> 
-            <cover-image class='img-view' src='/pages/Resources/endcall.png' bindtap="goBack"></cover-image>
+            <cover-image class='img-view' src='../../../src/Resources/endcall.png' bindtap="goBack"></cover-image>
           </cover-view>
         </cover-view>
       </cover-view>
-
     </webrtc-room>
   </view>
 </view>

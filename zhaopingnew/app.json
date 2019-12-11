@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/identity_verification/identity_verification",
+    "pages/interview_appointment/interview_appointment",
     "pages/resumedetail/resumedetail",
     "pages/sendresume/sendresume",
     "pages/add_educational_experience/add_educational_experience",

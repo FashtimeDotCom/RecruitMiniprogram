@@ -8,7 +8,8 @@
     <image class='userinfo-avatar' src="{{userInfo.avatarUrl}}" bindtap="goperson"></image>
   </view>
   <view class="secondtitle">
-    <image class="secondimg" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575955476866&di=5a15acee513fdb7d16a030f79fda3519&imgtype=0&src=http%3A%2F%2Fwww.0839gz.com%2Fdata%2Fupload%2Fjobfair%2F17%2F02%2F15%2F58a40de28241b.jpg" mode="aspectFill"></image>
+    <image class="secondimg" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575955476866&di=5a15acee513fdb7d16a030f79fda3519&imgtype=0&src=http%3A%2F%2Fwww.0839gz.com%2Fdata%2Fupload%2Fjobfair%2F17%2F02%2F15%2F58a40de28241b.jpg"
+      mode="aspectFill"></image>
     <view class="secondbottom">
       <view bindtap="show_jobfair">招聘会</view>
       <view bindtap="show_company">公司</view>
