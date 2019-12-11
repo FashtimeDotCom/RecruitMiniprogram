@@ -24,7 +24,6 @@ page {
 .location {
   margin-left: 6rpx;
 }
-
 .topinputcomb {
   width: 60%;
   height: 100%;
