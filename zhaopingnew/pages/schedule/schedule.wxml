@@ -13,6 +13,11 @@
     </view>
     <view class="end" style="background-color:{{item.color.round}}"></view>
   </view>
+  <view class="addinfo">
+    <navigator url="../interview_appointment/interview_appointment" class="addcontent">
+      <image class="plusimg" src="../../src/images/plusgreen.png"></image>
+    </navigator>
+  </view>
 </view>
 
 <view class="block" hidden="{{hunterFlag}}">
@@ -20,11 +25,16 @@
     <view class="start" style="background-color:{{item.color.round}}"></view>
     <view class="middle">
       <view class="top" style="background-color:{{item.color.top}}">2019年12月16日 20：33</view>
-        <view class="right">
-          <text class="name" >{{item.detailhead}}</text>
-          <text class="detail">视频面试</text>
+      <view class="right">
+        <text class="name">{{item.detailhead}}</text>
+        <text class="detail">视频面试</text>
       </view>
     </view>
     <view class="end" style="background-color:{{item.color.round}}"></view>
+  </view>
+  <view class="addinfo">
+    <navigator url="../interview_appointment/interview_appointment" class="addcontent">
+      <image class="plusimg" src="../../src/images/plusgreen.png"></image>
+    </navigator>
   </view>
 </view>

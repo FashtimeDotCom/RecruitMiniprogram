@@ -1,6 +1,6 @@
 <view class="container">
   <view wx:if="{{hunterFlag}}" class="content">
-    <view class="item" wx:for="{{array}}">
+    <navigator url="../resumedetail/resumedetail" class="item" wx:for="{{array}}">
       <image src="{{item.image}}" class="itemImage"></image>
       <view class="itemInformation">
         <view class="name">{{item.name}}</view>
@@ -9,7 +9,7 @@
       <image wx:if="{{isSend}}" src="../../src/images/icons/interviewerPass.png" class="interviewerPassImage"></image>
       <view wx:else class="interviewerPassView">通过
       </view>
-    </view>
+    </navigator>
   </view>
   <view wx:if="{{companyFlag}}" class="content">
     <view class="item" wx:for="{{array}}">

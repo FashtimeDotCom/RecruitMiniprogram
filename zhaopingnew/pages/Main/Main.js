@@ -9,11 +9,11 @@ Page({
   data: {
     locationinfo: null,
     city: '获取地理位置',
-    show_jobfair:false,
-    show_company:true,
+    show_jobfair: false,
+    show_company: true,
     company: [{
         id: 0,
-      imagesrc: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575954983732&di=816a8f8b150683965bdae5fe5376b7b7&imgtype=0&src=http%3A%2F%2Fi4.hexun.com%2F2018-04-09%2F192792045.jpg",
+        imagesrc: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575954983732&di=816a8f8b150683965bdae5fe5376b7b7&imgtype=0&src=http%3A%2F%2Fi4.hexun.com%2F2018-04-09%2F192792045.jpg",
         detailhead: "阿里巴巴",
         detailcontent: "中国一家提供电子商务在线交易平台的公司，由马云为首的18人于1999年在浙江杭州创立，是全球最大零售商之一",
         salary: "10k-25k",
@@ -44,7 +44,7 @@ Page({
         job: "会计",
       },
     ],
-    swipImg:[
+    swipImg: [
       "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575955120271&di=9fe146877f9c6827874c5725eb7c94b5&imgtype=0&src=http%3A%2F%2Fwww.xnec.cn%2Fdown%2F201106%2Fi18.jpg",
       "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575955120271&di=0d4c26730bd8cf28206bc6b3fb41dd00&imgtype=0&src=http%3A%2F%2Fwww.lpssy.edu.cn%2F_upload%2Farticle%2Fimages%2F8a%2Fa1%2F0ce5e6cc4e87b4f6da9f15e48362%2F15cf05d0-fbb0-4227-8cd2-775d474a7bc5.jpg",
       "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575955120270&di=9ee95d41e6cc507f84490c6b4cefae3c&imgtype=0&src=http%3A%2F%2Fhuagongyuan.njstudy.com%2Fuploadfile%2Fimage%2F107%2F224%2F2019%2F11%2F05%2Fp_1572913965_1965208.jpg",
@@ -62,8 +62,10 @@ Page({
   onLoad: function(options) {
     var that = this;
     let identity = getApp().globalData.identity;
-    var is_interviewer = identity=="面试官"?true:false;
-    that.setData({ is_interviewer});
+    var is_interviewer = identity == "面试官" ? true : false;
+    that.setData({
+      is_interviewer
+    });
     wx.getLocation({
       type: 'wgs84',
       success(res) {
@@ -85,7 +87,7 @@ Page({
           fail: function(info) {}
         });
       }
-      
+
     })
 
 
@@ -112,7 +114,7 @@ Page({
     })
 
   },
-  gohunterlist:function(){
+  gohunterlist: function() {
     wx.navigateTo({
       url: '../hunterlist/hunterlist',
     })
@@ -123,13 +125,13 @@ Page({
       url: '../person/person',
     })
   },
-  show_jobfair: function () {
+  show_jobfair: function() {
     this.setData({
       show_jobfair: false,
       show_company: true
     });
   },
-  show_company: function () {
+  show_company: function() {
     this.setData({
       show_jobfair: true,
       show_company: false

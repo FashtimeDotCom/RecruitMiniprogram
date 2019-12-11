@@ -24,6 +24,10 @@
       <image class="plusimg" src="../../src/images/plusgreen.png"></image>
       <text class="font">添加项目经验</text>
     </navigator>
-    <button>提交</button>
+    <view class="viewbutton">
+      <button>同意</button>
+      <button>拒绝</button>
+      <button>私信</button>
+    </view>
   </view>
 </view>

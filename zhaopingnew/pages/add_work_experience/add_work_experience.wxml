@@ -1,0 +1,24 @@
+<!--pages/add_work_experience/add_work_experience.wxml-->
+<form bindsubmit="companySubmit" class="myform">
+  <view class="mytitle">工作经历</view>
+  <view class="content">
+    <text>公司名称</text>
+    <input name="company_name" type="text"></input>
+  </view>
+  <view class="content">
+    <text>你的职位</text>
+    <input name="your_position" type="text"></input>
+  </view>
+  <view class="content">
+    <text>入职时间</text>
+    <input name="entry_time"></input>
+  </view>
+  <view class="content">
+    <text>离职时间</text>
+    <input name="resignation time" type="text"></input>
+  </view>
+  <view class="mytitle">工作内容</view>
+  <textarea name="job_content"></textarea>
+  <button formType="submit" style="width:26%;">保存</button>
+  <!-- </view> -->
+</form>

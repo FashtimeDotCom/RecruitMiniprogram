@@ -1,0 +1,32 @@
+<!--pages/add_work_experience/add_work_experience.wxml-->
+<form bindsubmit="Submit" class="myform">
+  <view class="content">
+    <text wx:if="{{companyFlag}}">姓名</text>
+    <text wx:if="{{hunterFlag}}">公司</text>
+    <input name="name" type="text"></input>
+  </view>
+  <view class="content">
+    <text>日期</text>
+    <picker class="picker" mode="date" value="{{date}}" start="2019-09-01" end="2055-09-01" bindchange="bindDateChange">
+      <view>
+        {{date}}
+      </view>
+    </picker>
+  </view>
+  <view class="timecontent">
+    <text>时间段</text>
+    <picker class="time" mode="time" value="{{time1}}" start="00:00" end="23:59" bindchange="bindTimeChange1">
+      <view>
+        {{time1}}
+      </view>
+    </picker>
+    <text>——</text>
+    <picker class="time" mode="time" value="{{time2}}" start="00:00" end="23:59" bindchange="bindTimeChange2">
+      <view>
+        {{time2}}
+      </view>
+    </picker>
+  </view>
+  <button formType="submit" style="width:26%;">预约</button>
+  <!-- </view> -->
+</form>

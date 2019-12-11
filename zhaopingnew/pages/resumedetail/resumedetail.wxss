@@ -87,3 +87,9 @@ button {
   align-items: center;
   line-height: 60rpx;
 }
+
+.viewbutton{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}

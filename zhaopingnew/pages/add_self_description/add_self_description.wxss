@@ -1,0 +1,23 @@
+/* pages/add_self_description/add_self_description.wxss */
+
+page {
+  background-color: #ededed;
+}
+
+textarea {
+  width: 93%;
+  height: 80%;
+  background-color: white;
+  margin: 3% auto;
+}
+
+button {
+  margin-top: 60rpx;
+  width: 160rpx;
+  height: 60rpx;
+  font-size: 33rpx;
+  background-color: #e0cab5;
+  color: white;
+  align-items: center;
+  line-height: 60rpx;
+}

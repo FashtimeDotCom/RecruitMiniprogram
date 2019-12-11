@@ -59,18 +59,38 @@
 }
 
 .right {
-  margin-left:6%; 
+  margin-left: 6%;
   width: 65%;
   display: flex;
   flex-direction: column;
 }
 
-
-.name{
-  margin-top:29rpx; 
+.name {
+  margin-top: 29rpx;
   font-size: 36rpx;
-  margin-bottom:13rpx;
+  margin-bottom: 13rpx;
 }
-.detail{
-  margin-bottom:36rpx; 
+
+.detail {
+  margin-bottom: 36rpx;
+}
+
+.addinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addcontent {
+  display: flex;
+  justify-content: center;
+  width: 66%;
+  margin-top: 3%;
+  padding: 3%;
+}
+
+.plusimg {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
 }

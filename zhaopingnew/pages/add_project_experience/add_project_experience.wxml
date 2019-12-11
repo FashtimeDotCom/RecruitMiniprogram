@@ -1,0 +1,24 @@
+<!--pages/add_work_experience/add_work_experience.wxml-->
+<form bindsubmit="Submit" class="myform">
+  <view class="mytitle">项目经验</view>
+  <view class="content">
+    <text>项目名称</text>
+    <input name="project_name" type="text"></input>
+  </view>
+  <view class="content">
+    <text>负责板块</text>
+    <input name="responsible_plate" type="text"></input>
+  </view>
+  <view class="content">
+    <text>开始时间</text>
+    <input name="entry_time"></input>
+  </view>
+  <view class="content">
+    <text>结束时间</text>
+    <input name="resignation time" type="text"></input>
+  </view>
+  <view class="mytitle">项目内容</view>
+  <textarea name="item_description"></textarea>
+  <button formType="submit" style="width:26%;">保存</button>
+  <!-- </view> -->
+</form>
