@@ -16,12 +16,10 @@ Page({
   },
   onGotUserInfo: function(e) {
     console.log(e.detail.userInfo)
-    if (e.detail) {
+    if (e.detail.userInfo) {
       getApp().globalData.userInfo = e.detail.userInfo;
       getApp().globalData.userInfoFlag = true;
       getApp().globalData.modalHidden = true;
-    }
-    if (e.detail.userInfo) {
       wx.navigateTo({
         url: '../register/register',
       })

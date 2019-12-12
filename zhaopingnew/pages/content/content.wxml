@@ -1,14 +1,14 @@
 <view class="contain">
-  <image class="titleImg" src="{{content.title_img}}"></image>
-  <view class="title">{{content.title}}</view>
-  <view class="_title">{{content._title}}</view>
+  <image class="titleImg" src="{{fair.fair_picture}}"></image>
+  <view class="title">{{fair.fair_name}}</view>
+  <view class="_title">{{fair.fair_time}}</view>
   <view class="mapImg">
     <view>招聘会分布图：</view>
-    <image class="titleImg" src="{{content.map_img}}"></image>
+    <image class="titleImg" src="{{fair.fair_map}}"></image>
     <view class="mapDetails" bindtap="goToDetail">点击此处查看详情>></view>
   </view>
   <view class="textContent" style="white-space:pre-wrap">
-    {{content.textContent}}
+    {{fair.fair_word}}
   </view>
   <view class="btview">
     <button>加入</button>

@@ -14,7 +14,8 @@ App({
     city: '获取地理位置',
     data: [],
     sceneNum: '',
-    isIpx: false
+    isIpx: false,
+    fair:null,
   },
   onLaunch: function(options) {
     // 展示本地存储能力
