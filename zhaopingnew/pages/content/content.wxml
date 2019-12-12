@@ -12,7 +12,7 @@
   </view>
   <view class="btview">
     <button>加入</button>
-    <button>参会企业</button>
+    <button bindtap="goParticipantinfo">参会企业</button>
   </view>
 </view>
 <view class=" {{isIpx ? 'blankView140' : 'blankView'}}"></view>
