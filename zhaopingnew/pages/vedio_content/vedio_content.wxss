@@ -1,0 +1,135 @@
+@import '../../iconfont/iconfont.wxss';
+.floatTop{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.left{
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  max-height: 65rpx;
+  margin-left: 14rpx;
+  font-size: 26rpx;
+  border-radius: 40rpx;
+  background-color: rgba(20, 20, 20, 0.5);
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+.iconfont{
+  font-size: 26rpx;
+}
+.span1{
+  padding: 5rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24rpx;
+}
+.span2{
+  padding: 2rpx 7rpx;
+  background-color: #986434;
+  border-radius: 32%;
+}
+.right{
+  width: 60%;
+  font-size: 32rpx;
+  padding-right: 40rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.compImg{
+  width: 65rpx;
+  height: 65rpx;
+  margin-left: -14rpx;
+  border-radius: 50%;
+}
+.topImg{
+  width: 100%;
+  max-height: 320rpx;
+  border-bottom: 3rpx dotted #C3B89E;
+}
+.scroll{
+  width: 96%;
+  margin: 0 auto;
+  padding: 0 10rpx;
+  min-height: 140rpx;
+  max-height: 200rpx;
+  overflow-y: hidden;
+  border-bottom: 3rpx dotted #C3B89E;
+  white-space:pre-wrap;
+  font-size: 26rpx;
+}
+
+/* input框 */
+.chat-input {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.chat-input-wrapper {
+  width: 100%;
+  display: flex;
+  padding: 16rpx 0;
+  background-color: #f4f4f6;
+  border-top: 1rpx solid #d6d7d9;
+}
+
+.chat-input-record > image {
+  margin-top: 14rpx;
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+}
+
+.chat-input-main {
+  flex: 1;
+  height: 100%;
+  padding: 0 16rpx;
+}
+
+.chat-input-main > input {
+  height: 46rpx;
+  line-height: 46rpx;
+  background-color: #fff;
+  border-radius: 12rpx;
+  padding: 10rpx;
+  border: 1rpx solid #d6d7d9;
+  font-size: 14px;
+}
+
+.chat-input-other {
+  width: 140rpx;
+}
+
+.chat-input-other > image {
+  margin-top: 14rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.chat-input-other > image:first-child {
+  margin-right: 20rpx;
+}
+.btsend {
+  width: 100rpx;
+  height: 50rpx;
+  background-color: #b1845c;
+  color: white;
+  border-radius: 12rpx;
+  font-family: Segoe UI;
+  text-align: center;
+  line-height: 49rpx;
+  margin-top: 9rpx;
+  margin-left: 16rpx;
+}

@@ -1,0 +1,35 @@
+<view class="floatTop">
+  <view class="left">
+    <image class="compImg" src="{{compImg}}"></image>
+    <span class="span1"><i class="iconfont icon-my">在线</i><span>{{nums}}</span></span>
+    <span class='span2'>关注</span>
+  </view>
+  <view class="right">{{compTitle}}</view>
+</view>
+<view class="topImg">
+  <image class="topImg" src="{{topImg}}"></image>
+  <scroll-view class="scroll" scroll-y="true">
+      {{introduceText}}
+  </scroll-view>
+</view>
+
+
+
+
+<form class="chat-input" id="hei">
+    <view class="chat-input-wrapper">
+      <view class="chat-input-record">
+        <image src="../../src/images/icons/add.png"  bindtap="plusclick"></image>
+      </view>
+      <view class="chat-input-main">
+        <input value="{{ msg }}" cursor-spacing="16" adjust-position="{{ true }}" cursor="16" confirm-type="send" confirm-hold="{{ true }}" bindinput="onInput" bindconfirm="send" bindfocus="onFocus" />
+      </view>
+      <view class="chat-input-other">
+        <view class="btsend" bindtap="send">发送</view>
+        <!-- <image src="../images/icons/smile.png" ></image>
+         -->
+      </view>
+    </view>
+    <view wx:if="{{plus}}">
+    </view>
+  </form>
