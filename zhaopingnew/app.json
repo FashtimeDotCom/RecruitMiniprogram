@@ -25,7 +25,8 @@
     "pages/choosecity/choosecity",
     "pages/resume/resume",
     "pages/order/order",
-    "pages/add_project_experience/add_project_experience"
+    "pages/add_project_experience/add_project_experience",
+    "pages/Participantinfo/Participantinfo"
   ],
   "permission": {
     "scope.userLocation": {

@@ -1,0 +1,12 @@
+<view class="thebottom">
+  <view class="oneofbottom" wx:for="{{company_list}}" wx:key="{{index}}">
+    <navigator url="../companydetail/companydetail?id={{item.id}}" class="notline">
+      <image src="{{item.relation_companyPicture}}"></image>
+      <view class="oneofcontent">
+        <text class="detailhead">{{item.relation_companyName}}</text>
+        <text class="detailcontent">{{item.relation_companyWord}}</text>
+      </view>
+    </navigator>
+    <view class="line2"></view>
+  </view>
+</view>

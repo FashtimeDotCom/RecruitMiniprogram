@@ -1,0 +1,64 @@
+/* pages/Participantinfo/Participantinfo.wxss */
+
+.oneofbottom {
+  width: 100%;
+  height: 246rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.oneofbottom image {
+  width: 130rpx;
+  height: 130rpx;
+  margin-top: 20rpx;
+}
+
+.oneofcontent {
+  width: 360rpx;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+}
+
+.detailhead {
+  display: block;
+  font-size: 39rpx;
+  color: #000;
+  /* line-height: 40rpx; */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.detailcontent {
+  display: -webkit-box;
+  font-size: 26rpx;
+  color: #000;
+  line-height: 40rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.line2 {
+  display: flex;
+  margin-left: 20%;
+  width: 80%;
+  height: 5rpx;
+  background: #e0cab5;
+}
+
+.thebottom {
+  width: 100%;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+}
+
+.notline {
+  height: 226rpx;
+  display: flex;
+  justify-content: space-around;
+}
