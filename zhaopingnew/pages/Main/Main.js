@@ -11,6 +11,8 @@ Page({
     city: '获取地理位置',
     show_jobfair: false,
     show_company: true,
+    current: 0,
+    fair: null, //招聘会信息
     company: [{
         id: 0,
         imagesrc: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575954983732&di=816a8f8b150683965bdae5fe5376b7b7&imgtype=0&src=http%3A%2F%2Fi4.hexun.com%2F2018-04-09%2F192792045.jpg",
@@ -43,17 +45,23 @@ Page({
         salary: "13k-19k",
         job: "会计",
       },
-    ],
-    swipImg: [
-      "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575955120271&di=9fe146877f9c6827874c5725eb7c94b5&imgtype=0&src=http%3A%2F%2Fwww.xnec.cn%2Fdown%2F201106%2Fi18.jpg",
-      "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575955120271&di=0d4c26730bd8cf28206bc6b3fb41dd00&imgtype=0&src=http%3A%2F%2Fwww.lpssy.edu.cn%2F_upload%2Farticle%2Fimages%2F8a%2Fa1%2F0ce5e6cc4e87b4f6da9f15e48362%2F15cf05d0-fbb0-4227-8cd2-775d474a7bc5.jpg",
-      "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575955120270&di=9ee95d41e6cc507f84490c6b4cefae3c&imgtype=0&src=http%3A%2F%2Fhuagongyuan.njstudy.com%2Fuploadfile%2Fimage%2F107%2F224%2F2019%2F11%2F05%2Fp_1572913965_1965208.jpg",
-      "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575955120270&di=ab2c5fb45ea8123298a10f520abaf200&imgtype=0&src=http%3A%2F%2F06imgmini.eastday.com%2Fmobile%2F20180920%2F20180920202400_dc4b3d2dcd3a2fa858a2cae134d25ff9_1.jpeg"
     ]
   },
   getcity: function(e) {
     wx.navigateTo({
       url: '/pages/choosecity/choosecity',
+    })
+  },
+  swiperChange: function(e) {
+    this.setData({
+      current: e.detail.current,
+    })
+  },
+  swiperClick: function(e) {
+    let id = e.currentTarget.dataset.id;
+    console.log(id);
+    wx.navigateTo({
+      url: '../content/content?fair_id=' + id,
     })
   },
   /**
@@ -87,10 +95,29 @@ Page({
           fail: function(info) {}
         });
       }
-
     })
 
-
+    var that = this;
+    wx.request({
+      url: 'https://www.workoline.com/zhaopin/public/index.php/fairGet',
+      data: {},
+      method: 'get', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+      header: {
+        "content-type": "application/json"
+      }, // 设置请求的 header
+      success: function(res) {
+        console.log(123);
+        console.log(res);
+        app.globalData.fair = res.data;
+        that.setData({
+          fair: res.data,
+        })
+        // getApp().d.userId = res.data.arr.id; //后台没有传输arr.id所以报错
+      },
+      fail: function() {
+        cosnole.log("错误");
+      }
+    });
   },
 
   /**

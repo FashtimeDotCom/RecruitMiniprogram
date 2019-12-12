@@ -19,9 +19,9 @@
   <view class="line"></view>
   <scroll-view class="thebottom" scroll-y>
 
-    <swiper class="aswiper" indicator-dots="true" indicator-actie-color="#996600" autoplay="true" circular="true" hidden="{{show_jobfair}}">
-      <swiper-item wx:for="{{swipImg}}">
-        <image src="{{item}}" mode="aspectFit"></image>
+    <swiper class="aswiper" indicator-dots="true" indicator-actie-color="#996600" autoplay="true" circular="true" hidden="{{show_jobfair}}" current="{{current}}" bindchange="swiperChange">
+      <swiper-item wx:for="{{fair}}">
+        <image src="{{item.fair_picture}}" mode="aspectFit" bindtap="swiperClick" data-id="{{item.fair_id}}"></image>
       </swiper-item>
     </swiper>
 
