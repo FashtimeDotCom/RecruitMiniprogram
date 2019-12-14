@@ -1,5 +1,4 @@
 <view class="container">
-  <!-- <image class="bgImg" src="../images/identity_verification_background.png" mode="aspectFill"></image> -->
   <view class="bgImg left"></view>
   <view class="bgImg right"></view>
   <view class="other-wigdget">
@@ -12,16 +11,16 @@
     </view>
 
     <view class="flex-wrp" style="flex-direction:row;">
-      <image class="chooseidentityImg woman" src="../../src/images/头像女.png" mode="widthFix" bindtap="select_hunter"></image>
-      <image class="chooseidentityImg man" src="../../src/images/头像男.png" mode="widthFix" bindtap="select_interviewer"></image>
+      <image class="chooseidentityImg woman" src="../../src/images/头像女.png" mode="widthFix"></image>
+      <image class="chooseidentityImg man" src="../../src/images/头像男.png" mode="widthFix"></image>
     </view>
     <form bindsubmit="go_login">
       <view>
         <radio-group class="radio-group" name="radio_identity" bindchange="radioChange">
-          <radio name="hunter" class="radio" style="margin-left: 18%;" value="面试者" checked="{{hunter_select}}">
+          <radio name="hunter" class="radio" style="margin-left: 18%;" value="面试者">
             <text style="color:#FFFFFF;font-size:18px">面试者</text>
           </radio>
-          <radio name="interviewer" class="radio" style="float:right;margin-right: 18%" value="面试官" checked="{{interviewer_select}}">
+          <radio name="interviewer" class="radio" style="float:right;margin-right: 18%" value="面试官">
             <text style=" color:#928383;font-size:18px ">面试官</text>
           </radio>
         </radio-group>
