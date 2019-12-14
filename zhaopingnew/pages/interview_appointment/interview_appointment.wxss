@@ -30,12 +30,9 @@ page {
 
 .content {
   margin: 6%;
-}
-
-.timecontent {
-  margin-left: 13%;
   display: flex;
-  /* justify-content: center; */
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .picker {
@@ -50,27 +47,23 @@ page {
 }
 
 .time {
+  width: 100rpx;
   height: 50rpx;
-  padding-top: 3rpx;
-  padding-bottom: 3rpx;
   padding-left: 16rpx;
   padding-right: 16rpx;
-  margin-left: 6%;
-  margin-right: 6%;
   background-color: white;
-  border-radius: 6.9px;
+  border-radius: 6px;
   font-family: Segoe UI;
-  /* width: 10%; */
 }
-
+.timeContent{
+  display: flex;
+  flex-direction: row;
+  width: 46%;
+  margin-right: 16%;
+}
 .content text {
   margin-left: 9%;
-  color: #9a6836;
-  font-size: 16.9px;
-  font-weight: 500;
-}
-
-.timecontent text {
+  margin-right: 9%;
   color: #9a6836;
   font-size: 16.9px;
   font-weight: 500;

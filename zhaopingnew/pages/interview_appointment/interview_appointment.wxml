@@ -13,19 +13,21 @@
       </view>
     </picker>
   </view>
-  <view class="timecontent">
+  <view class="content">
     <text>时间段</text>
-    <picker class="time" mode="time" value="{{time1}}" start="00:00" end="23:59" bindchange="bindTimeChange1">
+    <view class="timeContent">
+      <picker class="time" mode="time" value="{{time1}}" start="00:00" end="23:59" bindchange="bindTimeChange1">
       <view>
         {{time1}}
       </view>
     </picker>
-    <text>——</text>
+    <text>~</text>
     <picker class="time" mode="time" value="{{time2}}" start="00:00" end="23:59" bindchange="bindTimeChange2">
       <view>
         {{time2}}
       </view>
     </picker>
+    </view>
   </view>
   <button formType="submit" style="width:26%;">预约</button>
   <!-- </view> -->
