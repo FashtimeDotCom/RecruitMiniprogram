@@ -99,16 +99,13 @@ Page({
 
     var that = this;
     wx.request({
-      url: 'https://www.workoline.com/zhaopin/public/index.php/fairGet',
+      url: app.data.apiUrl+'fairGet',
       data: {},
       method: 'get', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
       header: {
         "content-type": "application/json"
       }, // 设置请求的 header
       success: function(res) {
-        console.log(123);
-        console.log(res);
-        app.globalData.fair = res.data;
         that.setData({
           fair: res.data,
         })
