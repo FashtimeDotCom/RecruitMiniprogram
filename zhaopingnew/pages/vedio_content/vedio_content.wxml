@@ -1,7 +1,13 @@
+<import src="../tmpl/tmpl.wxml" />
+<!-- ---------------- -->
+
 <view class="floatTop">
   <view class="left">
     <image class="compImg" src="{{compImg}}"></image>
-    <span class="span1"><i class="iconfont icon-my">在线</i><span>{{nums}}</span></span>
+    <span class="span1">
+      <i class="iconfont icon-my">在线</i>
+      <span>{{nums}}</span>
+    </span>
     <span class='span2'>关注</span>
   </view>
   <view class="right">{{compTitle}}</view>
@@ -9,27 +15,40 @@
 <view class="topImg">
   <image class="topImg" src="{{topImg}}"></image>
   <scroll-view class="scroll" scroll-y="true">
-      {{introduceText}}
+    {{introduceText}}
   </scroll-view>
 </view>
+<view style="height:133rpx;background:#EDEDED;"></view>
 
+<!-- -------------------------------------- -->
+<view class="center-box">
+</view>
 
-
-
+<view class="dialoge">
+  <scroll-view class="conmu" scroll-y="true">
+    <view class='odialoge' wx:for="{{dialoge}}">
+      <text class='info'><text class='name'>{{item[0]}}: </text>{{item[1]}} </text>
+    </view>
+  </scroll-view>
+  <view class="video" bindtap="vedioIn">
+    <image class="videoImg" src="../../src/images/vedio.png"></image>
+    <text style="font-size:28rpx;">点击进入</text>
+    <text class="goIn">视频面试</text>
+  </view>
+</view>
+<!-- ------------------ -->
 <form class="chat-input" id="hei">
-    <view class="chat-input-wrapper">
-      <view class="chat-input-record">
-        <image src="../../src/images/icons/add.png"  bindtap="plusclick"></image>
-      </view>
-      <view class="chat-input-main">
-        <input value="{{ msg }}" cursor-spacing="16" adjust-position="{{ true }}" cursor="16" confirm-type="send" confirm-hold="{{ true }}" bindinput="onInput" bindconfirm="send" bindfocus="onFocus" />
-      </view>
-      <view class="chat-input-other">
-        <view class="btsend" bindtap="send">发送</view>
-        <!-- <image src="../images/icons/smile.png" ></image>
-         -->
-      </view>
+  <view class="chat-input-wrapper">
+    <view class="chat-input-record">
+      <image src="../../src/images/icons/add.png" bindtap="plusclick"></image>
     </view>
-    <view wx:if="{{plus}}">
+    <view class="chat-input-main">
+      <input value="{{ msg }}" cursor-spacing="16" adjust-position="{{ true }}" cursor="16" confirm-type="send" confirm-hold="{{ true }}" bindinput="onInput" bindconfirm="send" bindfocus="onFocus" />
     </view>
-  </form>
+    <view class="chat-input-other">
+      <view class="btsend" bindtap="send">发送</view>
+    </view>
+  </view>
+  <view wx:if="{{plus}}">
+  </view>
+</form>
