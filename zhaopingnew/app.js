@@ -1,12 +1,15 @@
 //app.js
 
 App({
+  data:{
+    apiUrl:"https://www.workoline.com/zhaopin/public/index.php/"
+  },
   globalData: {
     identity: '游客',
     userInfo: "",
     getedroomid: "111",
     userInfo: null,
-    openid: null,
+    openid: "onsQK46yyFNK_4k3kHly48maRaqk",
     userInfoFlag: false,
     modalHidden: false,
     usersig: null,
