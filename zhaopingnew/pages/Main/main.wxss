@@ -89,14 +89,18 @@ page {
 .secondbottom view {
   width: 129rpx;
   height: 49rpx;
-  background-color: white;
   border-radius: 13rpx;
   font-family: Segoe UI;
   text-align: center;
   line-height: 49rpx;
   color: #963;
 }
-
+.onclickStatus{
+  background-color: #C5B89E;
+}
+.clickStatus{
+  background-color: #fff;
+}
 .line {
   display: flex;
   margin: 0 auto;

@@ -14,6 +14,7 @@ Page({
     current: 0,
     fair: null, //招聘会信息
     informationGet: null, //公司列表 
+    indexCurrent:1
   },
   getcity: function(e) {
     wx.navigateTo({
@@ -123,6 +124,8 @@ Page({
 
   },
   gohunterlist: function() {
+    var that = this;
+    that.setData({indexCurrent:3})
     wx.navigateTo({
       url: '../hunterlist/hunterlist',
     })
@@ -135,13 +138,15 @@ Page({
   show_jobfair: function() {
     this.setData({
       show_jobfair: false,
-      show_company: true
+      show_company: true,
+      indexCurrent:1,
     });
   },
   show_company: function() {
     this.setData({
       show_jobfair: true,
-      show_company: false
+      show_company: false,
+      indexCurrent:2,
     });
   },
 })
