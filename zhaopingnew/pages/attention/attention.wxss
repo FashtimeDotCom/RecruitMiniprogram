@@ -51,12 +51,20 @@
   display: flex;
   justify-content: space-between;
 }
-
+.rightbottom{
+  max-height: 160rpx;
+}
 .detail {
   margin-top: 10rpx;
   display: -webkit-box;
-  font-size: 33rpx;
+  font-size: 28rpx;
   color: #000;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .ident {
