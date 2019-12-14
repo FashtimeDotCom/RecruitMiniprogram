@@ -3,7 +3,7 @@
     <text class="title font">欢迎加入XX招聘</text>
     <view class="line"></view>
   </view>
-  <form bindsubmit="companySubmit" class="myform">
+  <form bindsubmit="submit" class="myform">
     <view class="content">
       <text>公司名字</text>
       <input name="company_name" type="text"></input>
@@ -45,7 +45,7 @@
     <text class="title font">欢迎来到XX招聘</text>
     <view class="line"></view>
   </view>
-  <form bindsubmit="hunterSubmit" class="myform">
+  <form bindsubmit="submit" class="myform">
     <view class="content">
       <text>用户名</text>
       <input name="hunter_name" type="text" bindinput="setcompany"></input>

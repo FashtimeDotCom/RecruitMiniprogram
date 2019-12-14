@@ -10,6 +10,7 @@ App({
     getedroomid: "111",
     userInfo: null,
     openid: "onsQK46yyFNK_4k3kHly48maRaqk",
+    // openid: "onsQK40aLEz5fDS8Dl6lSk4krXNck",
     userInfoFlag: false,
     modalHidden: false,
     usersig: null,
@@ -96,6 +97,25 @@ App({
 
 
   onShow: function() {
+    // 登录
+    wx.login({
+      success: res => {
+        // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        wx.request({
+          url: this.data.apiUrl + 'getsessionkeys',
+          data: {
+            code: res.code
+          },
+          method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+          header: {
+            "content-type": "application/json"
+          }, // 设置请求的 header
+          success: function (res) {
+            getApp().globalData.openid = res.data.openid;
+          }
+        });
+      }
+    })
 
   },
 

@@ -21,71 +21,38 @@ Page({
     }
   },
 
-  companySubmit: function(e) {
-    console.log('company_information:,submit事件，携带数据为：', e.detail.value)
+  submit: function(e) {
     var that = this;
-    that.setData({
-      company_information: e.detail.value
-    });
-    console.log(e.detail.userInfo)
-    if (e.detail) {
-      getApp().globalData.userInfo = e.detail.userInfo;
-      getApp().globalData.userInfoFlag = true;
-      getApp().globalData.modalHidden = true;
-    } else console.log(1234);
-
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-        wx.request({
-          url: 'https://www.workoline.com/zhaopin/public/index.php/getsessionkeys',
-          data: {
-            code: res.code
-          },
-          method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
-          header: {
-            "content-type": "application/json"
-          }, // 设置请求的 header
-          success: function(res) {
-            var openid = res.data.openid;
-            getApp().globalData.openid = openid;
-            var company_information = that.data.company_information;
-            if (openid) {
-              console.log("openid:" + openid);
-              // 通过openid 获取改用户的uid
-              wx.request({
-                url: 'https://www.workoline.com/zhaopin/public/index.php/authlogin1',
-                data: {
-                  openid: openid,
-                  company_name: company_information.company_name,
-                  company_address: company_information.company_address,
-                  company_tel: company_information.company_tel,
-                  company_represent: company_information.company_represent,
-                  company_sex: company_information.company_sex,
-                },
-                method: 'get', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
-                header: {
-                  "content-type": "application/json"
-                }, // 设置请求的 header
-                success: function(res) {
-                  console.log(res);
-                  // getApp().d.userId = res.data.arr.id; //后台没有传输arr.id所以报错
-                },
-                fail: function() {
-                  cosnole.log("错误");
-                }
-              });
-              // 通过openid 获取改用户的uid  end
-            }
-          }
-        });
+    var identity = getApp().globalData.identity=="面试官"?1:0;
+    wx.request({
+      url: app.data.apiUrl +'authlogin',
+      data: {openid:getApp().globalData.openid,identity:identity,...e.detail.value},
+      method: 'get', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+      header: {
+        "content-type": "application/json"
+      }, // 设置请求的 header
+      success: function (res) {
+        wx.showToast({
+          title: '注册成功',
+          icon: 'success',
+          duration: 2000,
+          mask: true,
+        })
+        getApp().globalData.userInfo = e.detail.userInfo;
+        getApp().globalData.userInfoFlag = true;
+        getApp().globalData.modalHidden = true;
+        setTimeout(function(){
+          wx.switchTab({
+            url: '../person/person',
+          })
+        }, 2000);
+        
+      },
+      fail: function () {
+        cosnole.log("错误");
       }
-    })
-
-    wx.switchTab({
-      url: '../person/person',
-    })
+    });
+   
   },
 
   onGotUserInfo: function(e) {
@@ -96,69 +63,6 @@ Page({
       getApp().globalData.userInfoFlag = true;
       getApp().globalData.modalHidden = true;
     } else console.log(1234);
-  },
-
-  hunterSubmit: function(e) {
-    console.log('hunter_information,submit事件，携带数据为：', e.detail.value)
-    var that = this;
-    that.setData({
-      hunter_information: e.detail.value
-    });
-
-
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-        wx.request({
-          url: 'https://www.workoline.com/zhaopin/public/index.php/getsessionkeys',
-          data: {
-            code: res.code
-          },
-          method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
-          header: {
-            "content-type": "application/json"
-          }, // 设置请求的 header
-          success: function(res) {
-            var openid = res.data.openid;
-            getApp().globalData.openid = openid;
-            var hunter_information = that.data.hunter_information;
-            if (openid) {
-              console.log("openid:" + openid);
-              // 通过openid 获取改用户的uid
-              wx.request({
-                url: 'https://www.workoline.com/zhaopin/public/index.php/authlogin',
-                data: {
-                  openid: openid,
-                  hunter_name: hunter_information.hunter_name,
-                  hunter_sex: hunter_information.hunter_sex,
-                  hunter_phone: hunter_information.hunter_phone,
-                  hunter_birthday: hunter_information.hunter_birthday,
-                  hunter_school: hunter_information.hunter_school,
-                  hunter_specialty: hunter_information.hunter_specialty
-                },
-                method: 'get', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
-                header: {
-                  "content-type": "application/json"
-                }, // 设置请求的 header
-                success: function(res) {
-                  console.log(res);
-                  // getApp().d.userId = res.data.arr.id; //后台没有传输arr.id所以报错
-                },
-                fail: function() {
-                  cosnole.log("错误");
-                }
-              });
-              // 通过openid 获取改用户的uid  end
-            }
-          }
-        });
-      }
-    })
-
-    wx.switchTab({
-      url: '../person/person',
-    })
   },
 
 

@@ -40,10 +40,6 @@
       <image src="../../src/images/presonimg4.png"></image>
       <text>招聘信息</text>
     </navigator>
-    <view class="acontent">
-      <image src="../../src/images/presonimg5.png"></image>
-      <text>帮助</text>
-    </view>
   </view>
 
 
@@ -87,10 +83,6 @@
       <image src="../../src/images/presonimg3.png"></image>
       <text>我的日程</text>
     </navigator>
-    <view class="acontent">
-      <image src="../../src/images/presonimg5.png"></image>
-      <text>帮助</text>
-    </view>
   </view>
 </view>
 

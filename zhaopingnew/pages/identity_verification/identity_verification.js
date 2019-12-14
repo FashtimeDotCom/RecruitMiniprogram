@@ -45,7 +45,7 @@ Page({
     });
   },
   go_login: function(e) {
-    identity = app.globalData.identity;
+    var identity = app.globalData.identity;
     console.log(identity);
     if (e.detail.value.radio_identity) {
       app.globalData.identity = e.detail.value.radio_identity
