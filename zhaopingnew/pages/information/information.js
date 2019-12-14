@@ -1,9 +1,7 @@
 var app = getApp();
 Page({
   data: {
-    openid:null,
-    companyFlag: false,
-    hunterFlag: false,
+    openid: null,
     name: "阿里巴巴网络技术有限公司",
     telephone: "13122222222",
     type: "网络技术",
@@ -12,87 +10,73 @@ Page({
     school: "温州大学",
     major: "信息与计算科学"
   },
-  companySubmit:function(e){
+  submit: function(e) {
     console.log('submit事件，携带数据为：', e.detail.value)
+    wx.request({
+      url: app.data.apiUrl + 'info_updatae',
+      data: {
+        openid: app.globalData.openid,
+        identity: app.globalData.identity,
+        ...e.detail.value
+      },
+      header: {},
+      method: 'GET',
+      dataType: 'json',
+      responseType: 'text',
+      success: function(res) {
+        if (res.data.result == 1) {
+          wx.showToast({
+            title: '修改成功',
+            duration: 2000,
+            icon: "none",
+            success:function(){
+              wx.switchTab({
+                url: './personal/personal',
+              })
+            }
+          })
+        }
+        else{
+          wx.showToast({
+            title: '修改失败',
+            duration: 1500,
+            icon:"none"
+          })
+        }
+      },
+      fail: function(res) {},
+    })
   },
-  hunterSubmit: function (e) {
-    console.log('submit事件，携带数据为：', e.detail.value)
-  },
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function(options) {
-    this.setData({
-      p_identity: getApp().globalData.identity
-    });
-    if (this.data.p_identity == "面试官") {
-      this.setData({
-        companyFlag: false,
-        hunterFlag: true,
+    var that = this;
+    let identity = app.globalData.identity;
+    if (identity == "面试官") {
+      that.setData({
+        companyFlag: true
       });
-      wx.setNavigationBarTitle({
-        title: '公司信息'
-      })
-      var openid = getApp().globalData.openid;
-
-      wx.request({
-        url: 'https://www.workoline.com/zhaopin/public/index.php/authlogin1',
-        data: {
-          openid: openid,
-        },
-        method: 'get', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
-        header: {
-          "content-type": "application/json"
-        }, // 设置请求的 header
-        success: function (res) {
-          console.log(res);
-          // getApp().d.userId = res.data.arr.id; //后台没有传输arr.id所以报错
-        },
-        fail: function () {
-          cosnole.log("错误");
-        }
+    } else if (identity == "面试者") {
+      that.setData({
+        companyFlag: false
       });
-
-
-
-
-
-
     }
-    if (this.data.p_identity == "面试者") {
-      this.setData({
-        companyFlag: true,
-        hunterFlag: false,
-      });
-      wx.setNavigationBarTitle({
-        title: '个人信息'
-      })
-      var openid = getApp().globalData.openid;
-
-      wx.request({
-        url: 'https://www.workoline.com/zhaopin/public/index.php/userInfo_get',
-        data: {
-          user_id: openid,
-        },
-        method: 'get', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
-        header: {
-          "content-type": "application/json"
-        }, // 设置请求的 header
-        success: function (res) {
-          console.log(res);
-          // getApp().d.userId = res.data.arr.id; //后台没有传输arr.id所以报错
-        },
-        fail: function () {
-          cosnole.log("错误");
-        }
-      });
-
-
-    }
-
-
-
-
+    wx.request({
+      url: app.data.apiUrl + 'userInfo_get',
+      data: {
+        openid: app.globalData.openid,
+        identity: identity
+      },
+      header: {},
+      method: 'GET',
+      dataType: 'json',
+      responseType: 'text',
+      success: function(res) {
+        console.log(res.data);
+        that.setData({
+          info: res.data.data
+        })
+      },
+      fail: function(res) {},
+    })
   },
 
 

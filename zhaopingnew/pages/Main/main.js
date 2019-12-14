@@ -27,7 +27,6 @@ Page({
   },
   swiperClick: function(e) {
     let id = e.currentTarget.dataset.id;
-    console.log(id);
     wx.navigateTo({
       url: '../content/content?fair_id=' + id,
     })
@@ -54,7 +53,6 @@ Page({
         myAmapFun.getRegeo({
           location: '' + that.data.locationinfo.longitude + ',' + that.data.locationinfo.latitude + '', //location的格式为'经度,纬度'
           success: function(data) {
-            console.log(data[0].regeocodeData.addressComponent.city);
             app.globalData.city = data[0].regeocodeData.addressComponent.city;
             that.setData({
               city: app.globalData.city
@@ -86,15 +84,13 @@ Page({
 
 
     wx.request({
-      url: 'https://www.workoline.com/zhaopin/public/index.php/informationGet',
+      url: app.data.apiUrl+'informationGet',
       data: {},
       method: 'get', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
       header: {
         "content-type": "application/json"
       }, // 设置请求的 header
       success: function(res) {
-        console.log(123);
-        console.log(res);
         that.setData({
           informationGet: res.data,
         })
@@ -118,7 +114,6 @@ Page({
     var tsuerInfo = app.globalData.userInfo;
     var tsuserInfoFlag = app.globalData.userInfoFlag;
     var tsmodalHidden = app.globalData.modalHidden
-    console.log(tsuerInfo);
     // 页面出现在前台时执行
     that.setData({
       userInfo: tsuerInfo,
@@ -133,7 +128,6 @@ Page({
     })
   },
   goperson: function() {
-    console.log(111);
     wx.switchTab({
       url: '../person/person',
     })
