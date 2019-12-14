@@ -4,6 +4,7 @@ Page({
     p_identity: "",
     companyFlag: false,
     hunterFlag: false,
+    userGet:null,
     person: [{
         id: 0,
       picture: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575954140366&di=3c69f9a565c5c3d9fa3060ba5ca6e41f&imgtype=0&src=http%3A%2F%2Fpic2.zhimg.com%2F50%2Fv2-1c3bd9fe6c6a28c5ca3a678549dfde28_hd.jpg",
@@ -56,5 +57,25 @@ Page({
         hunterFlag: false,
       });
     }
+
+    var that = this;
+    wx.request({
+      url: 'https://www.workoline.com/zhaopin/public/index.php/userGet',
+      data: {},
+      method: 'get', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+      header: {
+        "content-type": "application/json"
+      }, // 设置请求的 header
+      success: function (res) {
+        console.log(123);
+        console.log(res);
+        that.setData({
+          userGet: res.data,
+        })
+      },
+      fail: function () {
+        cosnole.log("错误");
+      }
+    });
   },
 })

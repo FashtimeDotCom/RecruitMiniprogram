@@ -1,24 +1,24 @@
 <view class="block" hidden="{{companyFlag}}">
-  <view class="acontent" wx:for="{{person}}" wx:key="{{index}}">
-    <image class="picture" src="{{item.picture}}"></image>
+  <view class="acontent" wx:for="{{userGet}}" wx:key="{{index}}">
+    <image class="picture" src="{{item.user_picture}}"></image>
     <view class="right">
       <view class="righttop">
-        <text class="name">{{item.name}}</text>
+        <text class="name">{{item.user_name}}</text>
         <view class="sex">
-          <image class="seximg" wx:if="{{item.sex=='女'}}" src="../../src/images/personimgwoman.png" mode="aspectFit"></image>
-          <image class="seximg" wx:if="{{item.sex=='男'}}" src="../../src/images/personimgman.png" mode="aspectFit"></image>
-          <text class="sexfont">{{item.sex}}</text>
+          <image class="seximg" wx:if="{{item.user_sex=='女'}}" src="../../src/images/personimgwoman.png" mode="aspectFit"></image>
+          <image class="seximg" wx:if="{{item.user_sex=='男'}}" src="../../src/images/personimgman.png" mode="aspectFit"></image>
+          <text class="sexfont">{{item.user_sex}}</text>
         </view>
-        <view class="ident">{{item.ident}}</view>
+        <view class="ident">{{item.user_label}}</view>
         <view class="attention">
           <view class="attentioncontent">关注</view>
           <image class="attentionimg" src="../../src/images/attention.png"></image>
         </view>
       </view>
       <view class="rightbottom">
-        <text class="detail">电话：{{item.phone}}</text>
-        <text class="detail">学校：{{item.school}}</text>
-        <text class="detail">专业：{{item.specialty}}</text>
+        <text class="detail">电话：{{item.user_mobile}}</text>
+        <text class="detail">学校：{{item.user_university}}</text>
+        <text class="detail">专业：{{item.user_major}}</text>
       </view>
     </view>
   </view>
