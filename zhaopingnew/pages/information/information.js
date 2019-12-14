@@ -1,17 +1,8 @@
 var app = getApp();
 Page({
   data: {
-    openid: null,
-    name: "阿里巴巴网络技术有限公司",
-    telephone: "13122222222",
-    type: "网络技术",
-    sex: "女",
-    age: "18",
-    school: "温州大学",
-    major: "信息与计算科学"
   },
   submit: function(e) {
-    console.log('submit事件，携带数据为：', e.detail.value)
     wx.request({
       url: app.data.apiUrl + 'info_updatae',
       data: {
@@ -70,7 +61,6 @@ Page({
       dataType: 'json',
       responseType: 'text',
       success: function(res) {
-        console.log(res.data);
         that.setData({
           info: res.data.data
         })
