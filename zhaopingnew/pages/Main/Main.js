@@ -13,39 +13,7 @@ Page({
     show_company: true,
     current: 0,
     fair: null, //招聘会信息
-    company: [{
-        id: 0,
-        imagesrc: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575954983732&di=816a8f8b150683965bdae5fe5376b7b7&imgtype=0&src=http%3A%2F%2Fi4.hexun.com%2F2018-04-09%2F192792045.jpg",
-        detailhead: "阿里巴巴",
-        detailcontent: "中国一家提供电子商务在线交易平台的公司，由马云为首的18人于1999年在浙江杭州创立，是全球最大零售商之一",
-        salary: "10k-25k",
-        job: "UI设计师",
-      },
-      {
-        id: 1,
-        imagesrc: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575954994069&di=112a6fa560427eef4e259a2c42b6a8ea&imgtype=0&src=http%3A%2F%2Ft2.focus-img.cn%2Fsh740wsh%2Fzx%2Fwx%2Fce04e5764662fb6e0533b21ab527bf96.jpg",
-        detailhead: "碧桂园",
-        detailcontent: "控股有限公司是一家房地产公司，创建于1992年，总部位于广东佛山。",
-        salary: "12k-23k",
-        job: "程序员",
-      },
-      {
-        id: 2,
-        imagesrc: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575955014304&di=62c36d05fa1b3e6ad0e2bb19baae7651&imgtype=0&src=http%3A%2F%2Fa4.att.hudong.com%2F11%2F55%2F01200000031945136324556752735.jpg",
-        detailhead: "上海汽车集团股份有限公司",
-        detailcontent: "是一家汽车制造公司，成立于2004年11月29日，总部位于上海。公司主要业务涵盖整车、零部件的研发、生产、销售、汽车金融等。",
-        salary: "22k-27k",
-        job: "工程师",
-      },
-      {
-        id: 3,
-        imagesrc: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575954854368&di=8b2ec9a3f6cf055d621d14ff8d411c04&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170326%2F8d71a87fefad4016a48c4418cce82686_th.jpeg",
-        detailhead: "中国工商银行",
-        detailcontent: "（INDUSTRIAL AND COMMERCIAL BANK OF CHINA）是一家从事存贷款、结算与现金管理等业务的金融机构，成立于1984年1月1日，总部位于北京。[1]",
-        salary: "13k-19k",
-        job: "会计",
-      },
-    ]
+    informationGet: null, //公司列表 
   },
   getcity: function(e) {
     wx.navigateTo({
@@ -111,6 +79,27 @@ Page({
         app.globalData.fair = res.data;
         that.setData({
           fair: res.data,
+        })
+        // getApp().d.userId = res.data.arr.id; //后台没有传输arr.id所以报错
+      },
+      fail: function() {
+        cosnole.log("错误");
+      }
+    });
+
+
+    wx.request({
+      url: 'https://www.workoline.com/zhaopin/public/index.php/informationGet',
+      data: {},
+      method: 'get', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+      header: {
+        "content-type": "application/json"
+      }, // 设置请求的 header
+      success: function(res) {
+        console.log(123);
+        console.log(res);
+        that.setData({
+          informationGet: res.data,
         })
         // getApp().d.userId = res.data.arr.id; //后台没有传输arr.id所以报错
       },

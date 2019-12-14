@@ -25,16 +25,16 @@
       </swiper-item>
     </swiper>
 
-    <view class="oneofbottom" wx:for="{{company}}" wx:key="{{index}}" hidden="{{show_company}}">
-      <navigator url="../companydetail/companydetail?id={{item.id}}" class="notline">
-        <image src="{{item.imagesrc}}"></image>
+    <view class="oneofbottom" wx:for="{{informationGet}}" wx:key="{{index}}" hidden="{{show_company}}">
+      <navigator url="../companydetail/companydetail?id={{item.information_id}}" class="notline">
+        <image src="{{item.company_picture}}"></image>
         <view class="oneofcontent">
-          <text class="detailhead">{{item.detailhead}}</text>
-          <text class="detailcontent">{{item.detailcontent}}</text>
+          <text class="detailhead">{{item.company_name}}</text>
+          <text class="detailcontent">{{item.company_word}}</text>
         </view>
         <view class="salaryjob">
-          <text class="salary">{{item.salary}}</text>
-          <text class="job">{{item.job}}</text>
+          <text class="salary">{{item.information_money}}</text>
+          <text class="job">{{item.information_position}}</text>
         </view>
       </navigator>
       <view class="line2"></view>

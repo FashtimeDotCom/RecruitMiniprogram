@@ -16,6 +16,7 @@ App({
     sceneNum: '',
     isIpx: false,
     fair:null,
+
   },
   onLaunch: function(options) {
     // 展示本地存储能力

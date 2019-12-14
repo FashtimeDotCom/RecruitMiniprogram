@@ -1,0 +1,18 @@
+<!--pages/add_work_experience/add_work_experience.wxml-->
+<form bindsubmit="Submit" class="myform">
+  <view class="mytitle">招聘信息修改</view>
+  <view class="content">
+    <text>招聘职位</text>
+    <input name="school_name" type="text"></input>
+  </view>
+  <view class="content">
+    <text>需要人数</text>
+    <input name="education_background" type="text"></input>
+  </view>
+  <view class="content">
+    <text>要求</text>
+    <input name="specialty" type="text"></input>
+  </view>
+  <button formType="submit" style="width:26%;">保存</button>
+  <!-- </view> -->
+</form>

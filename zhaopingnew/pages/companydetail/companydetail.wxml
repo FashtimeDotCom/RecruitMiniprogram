@@ -1,41 +1,41 @@
-<view class="bigbody">
+<view class="bigbody" wx:for="{{information_detail}}"  wx:key="{{index}}">
   <view class="top">
     <image class="topbgimg" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575953602786&di=dfcbb553598f965eb586ffac8eba1a37&imgtype=jpg&src=http%3A%2F%2Fimg0.imgtn.bdimg.com%2Fit%2Fu%3D1119739210%2C3962464371%26fm%3D214%26gp%3D0.jpg" mode="aspectFill">
     </image>
-    <image class="headimg" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575953571153&di=90f2dce94acfed5a1099924819eeb65f&imgtype=0&src=http%3A%2F%2Fmimg.shuaishou.com%2Fuserfiles%2F2016-3-2%2F5504.jpg"></image>
+    <image class="headimg" src="{{item.company_picture}}"></image>
     <view class="attentioncontent">关注</view>
     <image class="attention" src="../../src/images/attention.png"></image>
-    <text class="companyname">阿里巴巴网络技术有限公司</text>
+    <text class="companyname">{{item.company_name}}</text>
     <view class="line">
     </view>
   </view>
   <view class="bottom">
     <view class="acontent">
       <text class="fontbold">所需职位：</text>
-      <text class="end">UI设计师</text>
+      <text class="end">{{item.information_position}}</text>
     </view>
     <view class="acontent">
       <text class="fontbold">所需人数：</text>
-      <text class="redline">20</text>
+      <text class="redline">{{item.information_number}}</text>
       <text class="end">人</text>
     </view>
     <view class="acontent">
       <text class="fontbold">薪资：</text>
-      <text class="redline">10K-25K</text>
+      <text class="redline">{{item.information_money}}</text>
       <text class="end">元</text>
     </view>
     <view class="line2"></view>
     <view class="acontent">
       <view class="square"></view>
       <text class="smalltitle">待遇：</text>
-      <text class="detailcontent">基础工资+奖金+保险（转正后）</text>
+      <text class="detailcontent">{{item.information_treatment}}</text>
     </view>
     <view class="acontent">
       <view class="square"></view>
       <text class="smalltitle">要求：</text>
     </view>
     <view class="acontent">
-      <text class="detailcontent">基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）</text>
+      <text class="detailcontent">{{item.information_demand}}</text>
     </view>
     <view class="acontent">
       <view class="square"></view>
@@ -45,7 +45,7 @@
       <image class="imgdetail" src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=4289652199,4251960814&fm=26&gp=0.jpg"></image>
     </view>
     <view class="acontent">
-      <text class="detailcontent">基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）基础工资+奖金+保险（转正后）</text>
+      <text class="detailcontent">{{item.company_word}}</text>
     </view>
     <view class="line3"></view>
     <view class="btview">

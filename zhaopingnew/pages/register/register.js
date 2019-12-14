@@ -48,6 +48,8 @@ Page({
             "content-type": "application/json"
           }, // 设置请求的 header
           success: function(res) {
+            console.log("!");
+            console.log(res);
             var openid = res.data.openid;
             getApp().globalData.openid = openid;
             var company_information = that.data.company_information;
@@ -123,6 +125,7 @@ Page({
             var openid = res.data.openid;
             getApp().globalData.openid = openid;
             var hunter_information = that.data.hunter_information;
+            var tsuerInfo = app.globalData.userInfo;
             if (openid) {
               console.log("openid:" + openid);
               // 通过openid 获取改用户的uid
@@ -135,15 +138,15 @@ Page({
                   hunter_phone: hunter_information.hunter_phone,
                   hunter_birthday: hunter_information.hunter_birthday,
                   hunter_school: hunter_information.hunter_school,
-                  hunter_specialty: hunter_information.hunter_specialty
+                  hunter_specialty: hunter_information.hunter_specialty,
+                  user_picture: tsuerInfo.avatarUrl,
                 },
                 method: 'get', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
                 header: {
                   "content-type": "application/json"
                 }, // 设置请求的 header
                 success: function(res) {
-                  console.log(res);
-                  // getApp().d.userId = res.data.arr.id; //后台没有传输arr.id所以报错
+                  console.log(res)
                 },
                 fail: function() {
                   cosnole.log("错误");
@@ -166,6 +169,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    var that = this;
+
+
     this.setData({
       p_identity: getApp().globalData.identity
     });

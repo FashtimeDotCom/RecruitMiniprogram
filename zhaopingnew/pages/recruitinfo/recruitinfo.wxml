@@ -12,5 +12,10 @@
       <view wx:else class="intervieweePassView">重发
       </view>
     </view>
+    <view class="addinfo">
+      <navigator url="../postrecruitinfo/postrecruitinfo" class="addcontent">
+        <image class="plusimg" src="../../src/images/plusgreen.png"></image>
+      </navigator>
+    </view>
   </view>
 </view>
