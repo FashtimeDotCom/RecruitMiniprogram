@@ -1,10 +1,10 @@
 <view class="container">
   <view wx:if="{{hunterFlag}}" class="content">
     <navigator url="../resumedetail/resumedetail" class="item" wx:for="{{array}}">
-      <image src="{{item.image}}" class="itemImage"></image>
+      <image src="{{item.user_img}}" class="itemImage"></image>
       <view class="itemInformation">
-        <view class="name">{{item.name}}</view>
-        <view class="time">{{item.time}}</view>
+        <view class="name">{{item.resume_userName}}</view>
+        <view class="time">{{item.resume_time}}</view>
       </view>
       <image wx:if="{{isSend}}" src="../../src/images/icons/interviewerPass.png" class="interviewerPassImage"></image>
       <view wx:else class="interviewerPassView">通过
@@ -13,10 +13,10 @@
   </view>
   <view wx:if="{{companyFlag}}" class="content">
     <view class="item" wx:for="{{array}}">
-      <image src="{{item.image}}" class="itemImage"></image>
+      <image src="{{item.user_img}}" class="itemImage"></image>
       <view class="itemInformation">
-        <view class="name">{{item.name}}</view>
-        <view class="time">{{item.time}}</view>
+        <view class="name">{{item.resume_userName}}</view>
+        <view class="time">{{item.resume_time}}</view>
       </view>
       <view wx:if="{{isSend}}" class="intervieweeView">
         <image src="../../src/images/icons/interviewerPass.png" class="intervieweePassImage"></image>

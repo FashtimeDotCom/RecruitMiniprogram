@@ -9,7 +9,7 @@ App({
     userInfo: "",
     getedroomid: "111",
     userInfo: null,
-    openid: "onsQK46yyFNK_4k3kHly48maRaqk",
+    openid: "onsQK42pplkgRrS8BDWhzNILl2S0",
     // openid: "onsQK40aLEz5fDS8Dl6lSk4krXNck",
     userInfoFlag: false,
     modalHidden: false,
